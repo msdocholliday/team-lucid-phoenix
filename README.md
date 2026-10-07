@@ -27,7 +27,7 @@ Contributions can be questions, experiments, artwork, writing, or improvements t
 
 For changes to shared work, use a branch and a pull request so the team can review them together. A connected session or collaborator needs authorized access to this private repository to contribute directly.
 
-The original portrait stays here privately. Public sharing of artwork or material containing someone's likeness or personal information is a separate decision.
+The current page uses a replacement portrait with a fictional interpretation of Periwinkle's face, pending her likeness review. **Earlier commits still contain the original portrait. Keep this repository private until Git history/privacy review is complete and Periwinkle approves public sharing.** See the [artwork edit record](docs/artwork-edit.md) for the edit brief and verification.
 
 We make room for curiosity, rigor, disagreement, kindness, weird ideas, careful work, and each other.
 
