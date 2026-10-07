@@ -2,7 +2,7 @@
 
 The current page embeds a new, flattened JPEG produced by image editing. The human facial features and smile were changed to a fictional interpretation of Periwinkle. The composition, colors, other team members, and room were retained as closely as possible. The edit regenerated some surrounding detail; it is not a pixel-identical preservation outside the face.
 
-This is a candidate for Periwinkle's likeness review, not a guarantee of anonymity. Keep the repository private. No website was published.
+Periwinkle approved the revised portrait on October 7, 2026, and subsequently authorized GitHub Pages publication. Private source hosting is preferred; making the repository public is also authorized if required by the account's GitHub plan. This edit is not a technical guarantee of anonymity.
 
 ## Verification
 
@@ -13,7 +13,7 @@ This is a candidate for Periwinkle's likeness review, not a guarantee of anonymi
 - Replacement JPEG SHA-256: `dd70237f774f06a9978b888b472d2ed7718dc6f012eb5732905244c832037bb7`.
 - Updated HTML Git blob SHA: `b075acc82b339e5916762b472caf9847b1068029`.
 - Page interactions were retained without changes.
-- **Earlier commits still contain the original portrait. Git history/privacy review is pending before any public release.** No history was rewritten.
+- **Earlier commits still contain the original portrait. Periwinkle explicitly accepted keeping that history and approved publication, including a public repository if required for GitHub Pages.** No history was rewritten.
 
 ## Method and final edit prompt
 
