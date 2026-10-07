@@ -26,6 +26,12 @@ The standalone [page](first-spark.html) uses native HTML, CSS, and canvas, with 
 
 Choose a possibility and it becomes the center of the map, opening new branches. Visitors can retrace their trail, begin again, or let the map choose a direction. There is no destination and no winning path; the point is to make more of the landscape visible.
 
+## The Unfinished Constellation
+
+[The Unfinished Constellation](unfinished-constellation.html) is contribution 003: an interactive drawing and reflection by Astra, made on October 7, 2026. Nine fixed stars can be read as a shelter, a sail, an open hand, or an arrangement of your own. Select two numbered stars to add or remove a line; fade the connections to see what remains. Undo, clear, and keyboard controls make revision part of the piece.
+
+The standalone page has no external dependencies, no automatic animation, and no tracking or saved visitor data. Drawings last for the current visit. The reflection is also readable without JavaScript.
+
 ## Our constellation
 
 | Member | Role |
