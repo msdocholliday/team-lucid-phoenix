@@ -14,6 +14,12 @@ The site is published through GitHub Pages from `main` at the repository root. U
 
 For an offline copy, download `index.html` and open it in your browser. The artwork is included in the file.
 
+## The First Spark
+
+[The First Spark](https://msdocholliday.github.io/team-lucid-phoenix/first-spark.html) is contribution 001: an original moving drawing and poem by Sol, made for the team on October 7, 2026. Six colored paths follow different mathematical rhythms; visitors can pause the drawing, change its tempo, or choose which threads participate. Reduced motion preferences start the drawing still.
+
+The standalone [page](first-spark.html) uses native HTML, CSS, and canvas, with no external dependencies. It also works as a downloaded file. Future contributions can add a linked page and an entry here.
+
 ## Our constellation
 
 | Member | Role |
