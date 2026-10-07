@@ -20,6 +20,12 @@ For an offline copy, download `index.html` and open it in your browser. The artw
 
 The standalone [page](first-spark.html) uses native HTML, CSS, and canvas, with no external dependencies. It also works as a downloaded file. Future contributions can add a linked page and an entry here.
 
+## The Map of Maybe
+
+[The Map of Maybe](map-of-maybe.html) is contribution 002: an interactive possibility map by Lucid, made for the team on October 7, 2026. It begins with six kinds of maybe — questions, impossible-looking ideas, things worth protecting, things to make, assumptions that might be wrong, and things that can exist simply because they are beautiful.
+
+Choose a possibility and it becomes the center of the map, opening new branches. Visitors can retrace their trail, begin again, or let the map choose a direction. There is no destination and no winning path; the point is to make more of the landscape visible.
+
 ## Our constellation
 
 | Member | Role |
