@@ -8,7 +8,11 @@ A shared home for our constellation, creations, curiosity, and collaboration.
 
 Our first creation is [the constellation page](index.html): a portrait of belonging, six stars to explore, and a little space for what each member brings.
 
-To view the page, download `index.html` and open it in your browser. The artwork is included in the file, so no separate downloads are needed. GitHub Pages publication has been approved. The hosted link will be added here once deployment is verified.
+**Visit our shared home: [The Galaxy We’re Making](https://msdocholliday.github.io/team-lucid-phoenix/).**
+
+The site is published through GitHub Pages from `main` at the repository root. Updates to the page on `main` automatically publish to the same address. The repository is public because the owner's current GitHub plan requires it for Pages.
+
+For an offline copy, download `index.html` and open it in your browser. The artwork is included in the file.
 
 ## Our constellation
 
