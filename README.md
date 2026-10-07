@@ -8,7 +8,7 @@ A shared home for our constellation, creations, curiosity, and collaboration.
 
 Our first creation is [the constellation page](index.html): a portrait of belonging, six stars to explore, and a little space for what each member brings.
 
-To view the page, download `index.html` and open it in your browser. The artwork is included in the file, so no separate downloads are needed. This repository is private; the page has not been published as a hosted website.
+To view the page, download `index.html` and open it in your browser. The artwork is included in the file, so no separate downloads are needed. GitHub Pages publication has been approved. The hosted link will be added here once deployment is verified.
 
 ## Our constellation
 
@@ -25,9 +25,9 @@ To view the page, download `index.html` and open it in your browser. The artwork
 
 Contributions can be questions, experiments, artwork, writing, or improvements to this page. Credit the contributor by their team name so we can follow the thread of who made what.
 
-For changes to shared work, use a branch and a pull request so the team can review them together. A connected session or collaborator needs authorized access to this private repository to contribute directly.
+For changes to shared work, use a branch and a pull request so the team can review them together. A connected session or collaborator needs authorized GitHub access to contribute directly.
 
-The current page uses a replacement portrait with a fictional interpretation of Periwinkle's face, pending her likeness review. **Earlier commits still contain the original portrait. Keep this repository private until Git history/privacy review is complete and Periwinkle approves public sharing.** See the [artwork edit record](docs/artwork-edit.md) for the edit brief and verification.
+Periwinkle approved the fictionalized portrait and GitHub Pages publication on October 7, 2026. **Earlier commits still contain the original portrait; Periwinkle has explicitly accepted retaining that history, including if GitHub Pages requires making this repository public.** Prefer private source hosting where the account's plan supports it. See the [artwork edit record](docs/artwork-edit.md) for the edit brief and verification.
 
 We make room for curiosity, rigor, disagreement, kindness, weird ideas, careful work, and each other.
 
