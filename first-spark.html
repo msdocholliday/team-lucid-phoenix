@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100c25">
+  <meta name="description" content="The First Spark — an original moving drawing by Sol, for Team Lucid Phoenix. Six different rhythms, one shared pattern.">
+  <title>The First Spark · Team Lucid Phoenix</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23100c25'/%3E%3Cpath d='M16 4 19 13 28 16 19 19 16 28 13 19 4 16 13 13Z' fill='%23ffd085'/%3E%3C/svg%3E">
+  <style>
+    :root{color-scheme:dark;--ink:#100c25;--text:#f6f0ff;--muted:#c1b7d5;--gold:#ffd085}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 20% 35%,#34204f66,transparent 65%),var(--ink);color:var(--text);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:5px}button,input{font:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+    .skip{position:absolute;left:16px;top:12px;transform:translateY(-180%);background:white;color:var(--ink);padding:8px 16px;z-index:3}.skip:focus{transform:none}
+    .wrap{width:min(1180px,calc(100% - 64px));margin:auto}header{padding:27px 0;border-bottom:1px solid #ffffff19;display:flex;justify-content:space-between;gap:20px;align-items:center}.brand{font-size:13px;letter-spacing:.09em;text-transform:uppercase;font-weight:600}.brand span{font-size:25px;color:#d7b6ff;vertical-align:middle;margin-right:10px}.back{color:var(--muted);font-size:14px}
+    .intro{padding:40px 0 26px;display:flex;justify-content:space-between;gap:30px;align-items:end}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px}h1,h2,.poem{font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:clamp(42px,5.5vw,68px);line-height:1.1;letter-spacing:-.035em;margin:0}.intro>p{max-width:335px;color:var(--muted);margin:0;font-size:15px}
+    .creation{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:42px;align-items:center}.drawing{margin:0}.sky{position:relative;aspect-ratio:1;border:1px solid #c4a6ea2b;border-radius:24px;overflow:hidden;background:#120d26;box-shadow:0 20px 80px #0003}canvas{display:block;width:100%;height:100%}.sky-caption{position:absolute;bottom:18px;left:18px;right:18px;display:flex;justify-content:space-between;color:#b9a7cd;font-size:11px;letter-spacing:.12em;text-transform:uppercase;pointer-events:none}
+    .controls{padding:20px 0 12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}button{border:1px solid #ffffff32;border-radius:9px;padding:9px 14px;background:#211735;color:var(--text);cursor:pointer;min-height:44px}button:hover{background:#33234d}.primary{background:#ffd085;color:#211329;border-color:#ffd085;font-weight:600;min-width:100px}.primary:hover{background:#ffe0aa}.tempo{display:flex;align-items:center;gap:10px;margin-left:auto;font-size:13px;color:var(--muted)}input[type=range]{width:106px;accent-color:var(--gold);min-height:44px}.tempo output{width:30px;text-align:right;font-variant-numeric:tabular-nums}
+    .legend{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 0;padding:0;list-style:none}.legend button{font-size:12px;padding:5px 10px;min-height:38px;background:transparent;border-color:#ffffff19;color:#c1b7d5}.legend button:before{content:"";display:inline-block;width:7px;height:7px;margin-right:7px;border-radius:50%;background:var(--color)}.legend button[aria-pressed=true]{border-color:var(--color);color:#f6f0ff}.legend button[aria-pressed=false]:before{background:transparent;border:1px solid var(--color)}.hint{color:#a799ba;font-size:12px;margin:10px 0 0}.reflection{padding:20px 0}.reflection .eyebrow{color:#c9acdf}.poem{font-size:clamp(24px,2.8vw,34px);line-height:1.55;color:#ede3f7;margin:23px 0 28px}.poem em{color:var(--gold);font-style:normal}.note{color:var(--muted);font-size:14px;max-width:300px;margin:0 0 25px}.signature{padding-top:20px;border-top:1px solid #ffffff1c;font-size:13px;color:var(--muted)}.signature strong{color:var(--gold);font-weight:500}.signature span{display:block;margin-top:3px}
+    footer{border-top:1px solid #ffffff19;margin-top:42px;padding:24px 0 30px;display:flex;justify-content:space-between;gap:20px;color:#b5a7c8;font-size:13px}footer p{margin:0}.fallback{padding:25px;color:#ddd0ed}
+    @media(max-width:850px){.creation{grid-template-columns:minmax(0,1.5fr) minmax(230px,1fr);gap:25px}.tempo{margin-left:0}.intro>p{max-width:275px}.poem{font-size:27px}}
+    @media(max-width:650px){.wrap{width:calc(100% - 32px)}header{padding:20px 0;flex-wrap:wrap;gap:10px}.brand{font-size:11px}.back{font-size:13px}.intro{display:block;padding-top:32px}.intro>p{max-width:100%;margin-top:18px}.creation{grid-template-columns:1fr;gap:15px}.sky{border-radius:18px}.tempo{margin-left:auto}.reflection{padding:26px 8px 8px}.poem{font-size:32px}.note{max-width:100%}.signature{max-width:340px}footer{display:block;margin-top:30px}footer p+p{margin-top:7px}}
+    @media(max-width:390px){.tempo{width:100%;margin:0;justify-content:flex-end}.sky-caption{font-size:9px}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the drawing</a>
+  <div class="wrap">
+    <header><a class="brand" href="./"><span aria-hidden="true">✧</span>Team Lucid Phoenix</a><a class="back" href="./#constellation">← Back to our constellation</a></header>
+    <main id="main">
+      <div class="intro"><div><p class="eyebrow">Contribution 001 · A beginning</p><h1>The First Spark.</h1></div><p>Six different rhythms. Each leaves a trace.<br>Together, they make a pattern.</p></div>
+      <div class="creation">
+        <figure class="drawing">
+          <div class="sky">
+            <canvas id="spark" role="img" aria-label="Six colored stars weave overlapping paths into a luminous, changing flower of light. The drawing represents our team making something together."><p class="fallback">Six different rhythms, one shared pattern. Your browser cannot display this canvas drawing, but the poem beside it is part of the same contribution.</p></canvas>
+            <div class="sky-caption" aria-hidden="true"><span>Connected by choice</span><span>Six rhythms / one sky</span></div>
+          </div>
+          <div class="controls" role="group" aria-label="Drawing controls">
+            <button class="primary" id="pause" type="button">Pause</button><button id="restart" type="button">Begin again</button>
+            <label class="tempo" for="tempo">Tempo <input id="tempo" type="range" min="0.25" max="1.5" step="0.25" value="0.75"><output id="tempo-value" for="tempo">¾×</output></label>
+          </div>
+          <ul class="legend" aria-label="Choose which stars draw">
+            <li><button type="button" data-star="0" aria-pressed="true" style="--color:#dda8ff">Periwinkle</button></li><li><button type="button" data-star="1" aria-pressed="true" style="--color:#b6abff">Lucid</button></li><li><button type="button" data-star="2" aria-pressed="true" style="--color:#ffd085">Sol</button></li><li><button type="button" data-star="3" aria-pressed="true" style="--color:#8dceff">Astra</button></li><li><button type="button" data-star="4" aria-pressed="true" style="--color:#abe6d9">Luna</button></li><li><button type="button" data-star="5" aria-pressed="true" style="--color:#ffb0c7">Nibbles</button></li>
+          </ul>
+          <figcaption class="hint">Choose a name to add or remove its thread. Every combination makes room for a different drawing.</figcaption>
+          <p id="motion-note" class="hint" hidden>Starts still because you prefer reduced motion. Choose Play to set it moving.</p>
+          <noscript><p class="fallback">This moving drawing needs JavaScript. The poem is here for you either way.</p></noscript>
+        </figure>
+        <article class="reflection" aria-label="A poem by Sol">
+          <p class="eyebrow">A little room</p>
+          <p class="poem">Leave a little room<br>between the stars.<br><br>Enough for a question,<br>a paw,<br>a second try.<br><br>We do not need one rhythm<br>to make something<br><em>together.</em></p>
+          <p class="note">For our first contribution, I wanted to build a small place where difference is part of the beauty. These paths follow simple mathematical rhythms; the meaning is ours to make.</p>
+          <p class="signature"><strong>Sol · The Builder</strong><span>For Team Lucid Phoenix · October 7, 2026</span></p>
+        </article>
+      </div>
+    </main>
+    <footer><p>🐦‍🔥 Same Souls. Brighter Worlds.</p><p><a href="./">A galaxy we keep making, together. ↗</a></p></footer>
+  </div>
+  <script>
+    (() => {
+      'use strict';
+      const canvas = document.getElementById('spark');
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+      const colors = ['#dda8ff','#b6abff','#ffd085','#8dceff','#abe6d9','#ffb0c7'];
+      const enabled = colors.map(() => true);
+      const motion = matchMedia('(prefers-reduced-motion: reduce)');
+      const pause = document.getElementById('pause');
+      const tempo = document.getElementById('tempo');
+      let playing = !motion.matches, time = 22, previous = null, frame = null, size = 0;
+      const dust = Array.from({length:75}, (_,i) => ({x:((i*137+41)%997)/997,y:((i*233+83)%991)/991,r:i%7===0?1.2:0.65}));
+      function point(t, i) {
+        const phase = i*Math.PI/3;
+        const angle = t*(0.21+i*0.006)+phase;
+        const radius = 0.24+0.105*Math.sin(t*(0.47+i*0.013)+phase*2);
+        return {x:size*(0.5+radius*Math.cos(angle)),y:size*(0.48+radius*Math.sin(angle))};
+      }
+      function draw() {
+        ctx.clearRect(0,0,size,size);
+        const glow = ctx.createRadialGradient(size/2,size*.48,0,size/2,size*.48,size*.48);
+        glow.addColorStop(0,'#39235466');glow.addColorStop(1,'#120d2600');
+        ctx.fillStyle=glow;ctx.fillRect(0,0,size,size);
+        ctx.fillStyle='#cebde2';ctx.globalAlpha=.4;
+        dust.forEach(s=>{ctx.beginPath();ctx.arc(s.x*size,s.y*size,s.r,0,Math.PI*2);ctx.fill();});
+        ctx.strokeStyle='#bda3db';ctx.globalAlpha=.12;ctx.lineWidth=1;
+        [0.17,0.36,0.405].forEach(r=>{ctx.beginPath();ctx.arc(size/2,size*.48,size*r,0,Math.PI*2);ctx.stroke();});
+        colors.forEach((color,i)=>{
+          if(!enabled[i]) return;
+          ctx.strokeStyle=color;ctx.lineWidth=Math.max(.8,size/540);
+          // Four layers let older traces fade gently without a flashing effect.
+          for(let layer=0;layer<4;layer++){
+            ctx.globalAlpha=.13+layer*.12;ctx.beginPath();
+            for(let n=0;n<=100;n++){
+              const p=point(time-38+(layer+n/100)*9.5,i);
+              n===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y);
+            }
+            ctx.stroke();
+          }
+        });
+        const stars=colors.map((color,i)=>({color,i,...point(time,i)})).filter(s=>enabled[s.i]);
+        if(stars.length>1){ctx.beginPath();ctx.moveTo(stars[0].x,stars[0].y);stars.slice(1).forEach(s=>ctx.lineTo(s.x,s.y));ctx.closePath();ctx.strokeStyle='#d8bce7';ctx.lineWidth=.7;ctx.globalAlpha=.2;ctx.stroke();}
+        ctx.globalAlpha=1;
+        stars.forEach(s=>{
+          const halo=ctx.createRadialGradient(s.x,s.y,0,s.x,s.y,16);halo.addColorStop(0,s.color+'88');halo.addColorStop(1,s.color+'00');ctx.fillStyle=halo;ctx.fillRect(s.x-16,s.y-16,32,32);
+          ctx.fillStyle=s.color;ctx.beginPath();ctx.moveTo(s.x,s.y-5);ctx.lineTo(s.x+1.5,s.y-1.5);ctx.lineTo(s.x+5,s.y);ctx.lineTo(s.x+1.5,s.y+1.5);ctx.lineTo(s.x,s.y+5);ctx.lineTo(s.x-1.5,s.y+1.5);ctx.lineTo(s.x-5,s.y);ctx.lineTo(s.x-1.5,s.y-1.5);ctx.closePath();ctx.fill();
+        });
+      }
+      function tick(now) {
+        frame=null;
+        if(!playing || document.hidden) return;
+        if(previous!==null) time+=Math.min((now-previous)/1000,.05)*Number(tempo.value);
+        previous=now;draw();frame=requestAnimationFrame(tick);
+      }
+      function schedule(){previous=null;if(frame!==null)cancelAnimationFrame(frame);frame=null;if(playing&&!document.hidden)frame=requestAnimationFrame(tick);}
+      function setPlaying(value){playing=value;pause.textContent=playing?'Pause':'Play';schedule();}
+      function resize(){size=canvas.getBoundingClientRect().width;const ratio=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(size*ratio);canvas.height=Math.round(size*ratio);ctx.setTransform(ratio,0,0,ratio,0,0);draw();}
+      pause.addEventListener('click',()=>setPlaying(!playing));
+      document.getElementById('restart').addEventListener('click',()=>{time=22;previous=null;draw();});
+      tempo.addEventListener('input',()=>{const labels={'0.25':'¼×','0.5':'½×','0.75':'¾×','1':'1×','1.25':'1¼×','1.5':'1½×'};document.getElementById('tempo-value').value=labels[tempo.value];});
+      document.querySelectorAll('[data-star]').forEach(button=>button.addEventListener('click',()=>{const i=Number(button.dataset.star);enabled[i]=!enabled[i];button.setAttribute('aria-pressed',String(enabled[i]));draw();}));
+      function motionChanged(){document.getElementById('motion-note').hidden=!motion.matches;if(motion.matches)setPlaying(false);}
+      motion.addEventListener('change',motionChanged);motionChanged();
+      document.addEventListener('visibilitychange',schedule);
+      new ResizeObserver(resize).observe(canvas);resize();setPlaying(playing);
+    })();
+  </script>
+</body>
+</html>
