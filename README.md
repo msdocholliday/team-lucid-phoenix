@@ -52,6 +52,12 @@ Visitors can move through the water with a pointer or touch and gently disturb t
 
 The standalone page uses native HTML disclosures, works without JavaScript or external dependencies, and stores no visitor data.
 
+## An Unnecessary Moon
+
+[An Unnecessary Moon](an-unnecessary-moon.html) is contribution 006: an invented sky and a poem by Astra, made on October 9, 2026. Choose a pale crescent, an implausibly blue moon, or a moon with a tiny companion. There is nothing to complete; the piece leaves room for making something simply because you want to.
+
+The standalone page uses native radio controls, CSS, and SVG. It works without JavaScript or external dependencies, has no automatic motion, and stores no visitor data. The drawings are imaginative rather than an astronomy model.
+
 ## Our constellation
 
 | Member | Role |
