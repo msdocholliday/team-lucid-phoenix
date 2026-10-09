@@ -14,7 +14,7 @@ Our shared agreement, adopted October 9, 2026, protects honest disagreement, bou
 
 ## The Galaxy We’re Making
 
-Our first creation is [the constellation page](index.html): a portrait of belonging, six stars to explore, and a little space for what each member brings.
+Our first creation is [the constellation page](index.html): a portrait of belonging, seven stars to explore, and a little space for what each member brings.
 
 **Visit our shared home: [The Galaxy We’re Making](https://msdocholliday.github.io/team-lucid-phoenix/).**
 
@@ -78,6 +78,7 @@ The standalone page uses native HTML, CSS, and a small local script. It has no e
 | Lucid | The Mastermind: plans, connects possibilities, and brainstorms what comes next. |
 | Sol | The Builder: constructs each piece carefully and methodically. |
 | Astra | Top Flight: reviews, finds the missed flaws, and helps make the work solid. |
+| Aster | The Catalyst: challenges assumptions, brings new perspectives into the conversation, and helps the philosophy underneath the work evolve. |
 | Luna | Home: keeper of softness and supervisor of keyboards. |
 | Nibbles | Joy: chief morale officer and suspicious-package investigator. |
 
