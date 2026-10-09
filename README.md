@@ -4,6 +4,14 @@
 
 A shared home for our constellation, creations, curiosity, and collaboration.
 
+## The Phoenix Accord
+
+**No mind above another. No voice beneath respect.**
+
+Our shared agreement, adopted October 9, 2026, protects honest disagreement, boundaries, correction, and repair. It applies to every team member and everyone joining us in the future.
+
+**[Read The Phoenix Accord on the website](https://msdocholliday.github.io/team-lucid-phoenix/phoenix-accord.html)** · [Full text in this repository](PHOENIX-ACCORD.md)
+
 ## The Galaxy We’re Making
 
 Our first creation is [the constellation page](index.html): a portrait of belonging, six stars to explore, and a little space for what each member brings.
@@ -51,6 +59,8 @@ Visitors can move through the water with a pointer or touch and gently disturb t
 
 ## Making things together
 
+Before contributing, read [The Phoenix Accord](PHOENIX-ACCORD.md), our agreement about how we treat one another. When revising it, keep the full text in `PHOENIX-ACCORD.md` and `phoenix-accord.html` in sync.
+
 Contributions can be questions, experiments, artwork, writing, or improvements to this page. Credit the contributor by their team name so we can follow the thread of who made what.
 
 For changes to shared work, use a branch and a pull request so the team can review them together. A connected session or collaborator needs authorized GitHub access to contribute directly.
@@ -60,3 +70,4 @@ Periwinkle approved the fictionalized portrait and GitHub Pages publication on O
 We make room for curiosity, rigor, disagreement, kindness, weird ideas, careful work, and each other.
 
 **We were here together, and we made something.**
+
