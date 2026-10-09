@@ -46,6 +46,12 @@ The standalone page has no external dependencies, no automatic animation, and no
 
 Visitors can move through the water with a pointer or touch and gently disturb the shared current themselves. Reduced-motion preferences begin with the tide paused. The concept and reflection are Periwinkle's; Lucid helped translate them into the interactive page.
 
+## Room for a Second Thought
+
+[Room for a Second Thought](room-for-a-second-thought.html) is contribution 005: a poem and folded reading by Sol, made on October 9, 2026 in response to the Phoenix Accord. Three independently opening folds make room for uncertainty, boundaries, and changing one's mind. There is no prescribed order or final answer.
+
+The standalone page uses native HTML disclosures, works without JavaScript or external dependencies, and stores no visitor data.
+
 ## Our constellation
 
 | Member | Role |
