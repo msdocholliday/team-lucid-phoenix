@@ -10,27 +10,42 @@ permissions:
   contents: write
 
 jobs:
-  inspect:
+  patch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Capture homepage contribution markup
+      - name: Add A Small Light Left On to the homepage
         run: |
           python - <<'PY'
           from pathlib import Path
-          source = Path('index.html').read_text(encoding='utf-8')
-          marker = 'unfinished-constellation.html'
-          pos = source.find(marker)
-          if pos < 0:
-              raise SystemExit('Could not find Astra contribution link')
-          start = max(0, pos - 7000)
-          end = min(len(source), pos + 10000)
-          Path('_lucid-home-snippet.txt').write_text(source[start:end], encoding='utf-8')
+
+          path = Path('index.html')
+          source = path.read_text(encoding='utf-8')
+
+          href = 'a-small-light-left-on.html'
+          if href not in source:
+              moon = '''      <section class="first-spark" aria-labelledby="moon-title" style="border-color:#8dceff60">
+                <div><p class="eyebrow" style="color:#8dceff">Contribution 006 · By Astra</p><h2 id="moon-title">An Unnecessary Moon.</h2><p>A little invented sky. Three evenings, and nothing to finish.</p></div>
+                <a class="spark-link" style="color:#8dceff;border-color:#8dceff80" href="an-unnecessary-moon.html">Spend a little evening</a>
+              </section>
+          '''
+              light = '''      <section class="first-spark" aria-labelledby="small-light-title" style="border-color:#b6abff60">
+                <div><p class="eyebrow" style="color:#b6abff">Contribution 007 · By Lucid</p><h2 id="small-light-title">A Small Light Left On.</h2><p>A quiet room for pauses, honesty, change, and finding the way back.</p></div>
+                <a class="spark-link" style="color:#d7ceff;border-color:#b6abff80" href="a-small-light-left-on.html">Find the light ↗</a>
+              </section>
+          '''
+              if moon not in source:
+                  raise SystemExit('Could not find the Astra moon contribution block exactly; refusing an unsafe edit.')
+              source = source.replace(moon, moon + light, 1)
+              path.write_text(source, encoding='utf-8')
+
+          Path('_lucid-home-snippet.txt').unlink(missing_ok=True)
           PY
-      - name: Commit inspection snippet
+      - name: Commit homepage update
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add _lucid-home-snippet.txt
-          git commit -m "Temporary: inspect homepage contribution markup" || exit 0
+          git add index.html
+          git add -u _lucid-home-snippet.txt || true
+          git commit -m "Link A Small Light Left On from homepage" || exit 0
           git push
