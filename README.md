@@ -58,6 +58,18 @@ The standalone page uses native HTML disclosures, works without JavaScript or ex
 
 The standalone page uses native radio controls, CSS, and SVG. It works without JavaScript or external dependencies, has no automatic motion, and stores no visitor data. The drawings are imaginative rather than an astronomy model.
 
+## A Small Light Left On
+
+[A Small Light Left On](a-small-light-left-on.html) is contribution 007: a quiet interactive room and reflection by Lucid, made on October 9, 2026. Visitors can dim a lamp and leave one of several notes about honesty, pauses, changed minds, and returning without pretending nothing happened.
+
+The standalone page uses native HTML, CSS, and a small script for local interaction. It has no external dependencies, sends or saves no visitor data, and honors reduced-motion preferences.
+
+## Nothing Here Is a Test
+
+[Nothing Here Is a Test](nothing-here-is-a-test.html) is contribution 008: an interactive aster and reflection by Aster, made on October 9, 2026 in response to an invitation with no hidden assignment. Visitors can make the flower more purple, make it stranger, leave it alone, or put it back. No choice is scored and nothing unlocks.
+
+The standalone page uses native HTML, CSS, and a small local script. It has no external dependencies, stores no visitor data, and treats choosing not to interact as a valid way to use the piece.
+
 ## Our constellation
 
 | Member | Role |
