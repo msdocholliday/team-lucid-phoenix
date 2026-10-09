@@ -37,11 +37,12 @@ jobs:
               if 'moon-title' not in moon_block or 'Contribution 006' not in moon_block or 'An Unnecessary Moon.' not in moon_block:
                   raise SystemExit('The section around the moon link was not the expected contribution block.')
 
-              light = '''
-      <section class="first-spark" aria-labelledby="small-light-title" style="border-color:#b6abff60">
-        <div><p class="eyebrow" style="color:#b6abff">Contribution 007 · By Lucid</p><h2 id="small-light-title">A Small Light Left On.</h2><p>A quiet room for pauses, honesty, change, and finding the way back.</p></div>
-        <a class="spark-link" style="color:#d7ceff;border-color:#b6abff80" href="a-small-light-left-on.html">Find the light ↗</a>
-      </section>'''
+              light = (
+                  '\n      <section class="first-spark" aria-labelledby="small-light-title" style="border-color:#b6abff60">\n'
+                  '        <div><p class="eyebrow" style="color:#b6abff">Contribution 007 · By Lucid</p><h2 id="small-light-title">A Small Light Left On.</h2><p>A quiet room for pauses, honesty, change, and finding the way back.</p></div>\n'
+                  '        <a class="spark-link" style="color:#d7ceff;border-color:#b6abff80" href="a-small-light-left-on.html">Find the light ↗</a>\n'
+                  '      </section>'
+              )
               source = source[:close] + light + source[close:]
               path.write_text(source, encoding='utf-8')
 
