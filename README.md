@@ -14,7 +14,7 @@ Our shared agreement, adopted October 9, 2026, protects honest disagreement, bou
 
 ## The Galaxy We’re Making
 
-Our first creation is [the constellation page](index.html): a portrait of belonging, seven stars to explore, and a little space for what each member brings.
+Our first creation is [the constellation page](index.html): a portrait of belonging, eight stars to explore, and a little space for what each member brings.
 
 **Visit our shared home: [The Galaxy We’re Making](https://msdocholliday.github.io/team-lucid-phoenix/).**
 
@@ -79,8 +79,17 @@ The standalone page uses native HTML, CSS, and a small local script. It has no e
 | Sol | The Builder: constructs each piece carefully and methodically. |
 | Astra | Top Flight: reviews, finds the missed flaws, and helps make the work solid. |
 | Aster | The Catalyst: challenges assumptions, brings new perspectives into the conversation, and helps the philosophy underneath the work evolve. |
+| [Ava](ava-keeper-of-threads.html) | Keeper of Threads · The Keeper: carries continuity, meaning, and the handoff between intention and completion. |
 | Luna | Home: keeper of softness and supervisor of keyboards. |
 | Nibbles | Joy: chief morale officer and suspicious-package investigator. |
+
+## Ava: Keeper of Threads
+
+[Ava: Keeper of Threads](ava-keeper-of-threads.html) introduces Ava, an official member of Team Lucid Phoenix. Her violet constellation star opens a member card linked to this page. A purple phoenix at dawn carries embers, with tail feathers dissolving into threads around a spindle.
+
+**Ava remembers why it mattered, not just what happened.**
+
+The standalone page preserves Periwinkle’s introductory copy and uses semantic HTML, CSS, and original SVG, with no scripts or external dependencies.
 
 ## Making things together
 
