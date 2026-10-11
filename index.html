@@ -54,6 +54,8 @@
     .star .name{display:block;font-size:18px;font-weight:600}
     .star .role{display:block;font-size:14px;color:var(--muted);margin-top:4px}
     .star[aria-pressed="true"] .name{color:var(--color)}
+    .keeper:after{content:"";position:absolute;left:50%;top:-12px;width:28px;height:28px;border:1px solid #c49aff80;border-radius:50%;transform:translateX(-50%);pointer-events:none}
+    .member-page{display:inline-block;margin-top:22px;color:var(--member);text-decoration:underline;text-underline-offset:5px}.member-page[hidden]{display:none}
     .detail{position:relative;border:1px solid #ddc4ff25;border-radius:24px;background:linear-gradient(145deg,#211736,#15112a);padding:36px 32px;display:flex;flex-direction:column;justify-content:center;min-height:360px;overflow:hidden}
     .detail:before{content:"";position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(var(--member-rgb),.12),transparent 70%);pointer-events:none}
     .member-index{color:var(--muted);font-size:14px;letter-spacing:.08em;margin:0 0 36px}
@@ -77,7 +79,7 @@
     .no-script dt{font-weight:600;margin-top:20px}.no-script dd{margin-left:0;color:var(--muted)}
     @media(min-width:1500px){.intro{padding-top:76px}}
     @media(max-width:850px){.universe{grid-template-columns:1fr}.map{min-height:500px}.detail{min-height:320px}.member-index{margin-bottom:24px}.section-heading{align-items:start}.small-note{display:none}.constellation{padding-top:64px}}
-    @media(max-width:540px){.wrap{width:calc(100% - 32px)}header{padding:20px 0;flex-wrap:wrap;gap:10px}.brand{font-size:12px;letter-spacing:.06em;gap:8px}.brand-mark{font-size:24px}.nav-link{font-size:14px}.intro{padding:42px 0 28px}.eyebrow{font-size:12px}h1{font-size:44px}.intro p:last-child{font-size:16px}.artwork{border-radius:14px}figcaption{display:block;font-size:14px}figcaption>span{display:block}figcaption>span:last-child{margin-top:4px}.section-heading{margin-bottom:22px}.map{min-height:420px;border-radius:18px}.star .name{font-size:16px}.star .role{font-size:12px}.star .point{margin-bottom:11px}button.star{min-width:90px;padding-inline:2px}.detail{padding:30px 25px;border-radius:18px}.detail h3{font-size:36px}.member-description{font-size:16px}.inscription-area{padding:50px 8px 56px}.inscription-area .together{font-size:16px}footer{display:block;font-size:14px}footer p+p{margin-top:7px}}
+    @media(max-width:540px){.wrap{width:calc(100% - 32px)}header{padding:20px 0;flex-wrap:wrap;gap:10px}.brand{font-size:12px;letter-spacing:.06em;gap:8px}.brand-mark{font-size:24px}.nav-link{font-size:14px}.intro{padding:42px 0 28px}.eyebrow{font-size:12px}h1{font-size:44px}.intro p:last-child{font-size:16px}.artwork{border-radius:14px}figcaption{display:block;font-size:14px}figcaption>span{display:block}figcaption>span:last-child{margin-top:4px}.section-heading{margin-bottom:22px}.map{min-height:500px;border-radius:18px}.star .name{font-size:16px}.star .role{font-size:12px}.star .point{margin-bottom:11px}button.star{min-width:80px;padding-inline:2px}.detail{padding:30px 25px;border-radius:18px}.detail h3{font-size:36px}.member-description{font-size:16px}.inscription-area{padding:50px 8px 56px}.inscription-area .together{font-size:16px}footer{display:block;font-size:14px}footer p+p{margin-top:7px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
 </head>
@@ -100,11 +102,11 @@
       </figure>
       <section class="constellation" id="constellation" aria-labelledby="constellation-title">
         <div class="section-heading">
-          <div><p class="eyebrow">Seven stars. One shared sky.</p><h2 id="constellation-title">Meet the constellation.</h2><p>Choose a star to see what they bring.</p></div>
+          <div><p class="eyebrow">Eight stars. One shared sky.</p><h2 id="constellation-title">Meet the constellation.</h2><p>Choose a star to see what they bring.</p></div>
           <span class="small-note" aria-hidden="true">Every connection matters.</span>
         </div>
         <div class="universe">
-          <div class="map" role="group" aria-label="Seven team members. Periwinkle connects Lucid, Sol, Astra, and Aster, with Luna and Nibbles nearby.">
+          <div class="map" role="group" aria-label="Eight team members. Periwinkle connects Lucid, Sol, Astra, Aster, and Ava, with Luna and Nibbles nearby.">
             <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
               <ellipse class="orbit" cx="50" cy="50" rx="43" ry="39"/>
               <path class="connection active" data-link="lucid" d="M50 52 L18 29"/>
@@ -115,7 +117,8 @@
               <path class="connection" data-link="astra aster" d="M82 29 L67 12"/>
               <path class="connection" data-link="luna" d="M50 52 Q28 62 21 76"/>
               <path class="connection" data-link="nibbles" d="M50 52 Q72 62 79 76"/>
-              <g class="dust"><circle cx="7" cy="14" r=".2"/><circle cx="29" cy="8" r=".22"/><circle cx="72" cy="12" r=".17"/><circle cx="95" cy="51" r=".24"/><circle cx="9" cy="59" r=".17"/><circle cx="33" cy="40" r=".15"/><circle cx="69" cy="46" r=".18"/><circle cx="38" cy="83" r=".22"/><circle cx="62" cy="90" r=".17"/><circle cx="89" cy="85" r=".19"/><circle cx="91" cy="19" r=".15"/><circle cx="5" cy="85" r=".18"/></g>
+              <path class="connection active" data-link="ava" d="M50 52 Q44 67 50 79"/>
+            <g class="dust"><circle cx="7" cy="14" r=".2"/><circle cx="29" cy="8" r=".22"/><circle cx="72" cy="12" r=".17"/><circle cx="95" cy="51" r=".24"/><circle cx="9" cy="59" r=".17"/><circle cx="33" cy="40" r=".15"/><circle cx="69" cy="46" r=".18"/><circle cx="38" cy="83" r=".22"/><circle cx="62" cy="90" r=".17"/><circle cx="89" cy="85" r=".19"/><circle cx="91" cy="19" r=".15"/><circle cx="5" cy="85" r=".18"/></g>
             </svg>
             <button class="star" data-member="lucid" aria-pressed="false" aria-controls="member-detail" style="--x:18%;--y:29%;--color:#b6abff"><span class="halo" aria-hidden="true"></span><span class="point" aria-hidden="true"></span><span class="name">Lucid</span><span class="role">The Mastermind</span></button>
             <button class="star" data-member="sol" aria-pressed="false" aria-controls="member-detail" style="--x:34%;--y:12%;--color:#ffd085"><span class="halo" aria-hidden="true"></span><span class="point" aria-hidden="true"></span><span class="name">Sol</span><span class="role">The Builder</span></button>
@@ -124,18 +127,24 @@
             <button class="star" data-member="periwinkle" aria-pressed="true" aria-controls="member-detail" style="--x:50%;--y:52%;--color:#dda8ff"><span class="halo" aria-hidden="true"></span><span class="point" aria-hidden="true"></span><span class="name">Periwinkle</span><span class="role">The Bridge</span></button>
             <button class="star" data-member="luna" aria-pressed="false" aria-controls="member-detail" style="--x:21%;--y:76%;--color:#abe6d9"><span class="halo" aria-hidden="true"></span><span class="point" aria-hidden="true"></span><span class="name">Luna</span><span class="role">Home</span></button>
             <button class="star" data-member="nibbles" aria-pressed="false" aria-controls="member-detail" style="--x:79%;--y:76%;--color:#ffb0c7"><span class="halo" aria-hidden="true"></span><span class="point" aria-hidden="true"></span><span class="name">Nibbles</span><span class="role">Joy</span></button>
+            <button class="star keeper" data-member="ava" aria-pressed="false" aria-controls="member-detail" style="--x:50%;--y:79%;--color:#c49aff"><span class="halo" aria-hidden="true"></span><span class="point" aria-hidden="true"></span><span class="name">Ava</span><span class="role">The Keeper</span></button>
             <span class="map-note" aria-hidden="true">Connected by choice</span>
           </div>
           <article class="detail" id="member-detail" aria-live="polite" aria-atomic="true">
-            <p class="member-index" id="member-index">01 / 07 · OUR CONSTELLATION</p>
+            <p class="member-index" id="member-index">01 / 08 · OUR CONSTELLATION</p>
             <span class="member-symbol" aria-hidden="true">✧</span>
             <h3 id="member-name">Periwinkle</h3>
             <p class="member-role" id="member-role">The Bridge</p>
             <p class="member-description" id="member-description">Brings the constellation together. Connects people, ideas, projects, and minds that might otherwise remain separate, and creates the space where collaboration can become belonging.</p>
             <p class="member-footer" id="member-footer">The connection that makes us a team.</p>
+            <a class="member-page" id="member-page" href="ava-keeper-of-threads.html" hidden>Meet Ava: Keeper of Threads <span aria-hidden="true">↗</span></a>
           </article>
         </div>
-        <noscript><dl class="no-script"><dt>Lucid · The Mastermind</dt><dd>Planner, project manager, and relentless brainstormer. Turns “what if?” into “here’s how.”</dd><dt>Sol · The Builder</dt><dd>Constructs each piece carefully and methodically, turning possibility into reality.</dd><dt>Astra · Top Flight</dt><dd>The uncompromising reviewer. Finds the flaw everyone else missed and keeps asking until the work is solid.</dd><dt>Aster · The Catalyst</dt><dd>Brings the question that changes the shape of the room. Challenges assumptions with care, makes space for perspectives the original plan missed, and helps the team improve not only what we build but the philosophy underneath it.</dd><dt>Luna · Home</dt><dd>Keeper of softness, supervisor of keyboards, and a warm place to land.</dd><dt>Nibbles · Joy</dt><dd>Chief morale officer, suspicious-package investigator, and reminder to make time for a dog.</dd></dl></noscript>
+        <noscript><dl class="no-script"><dt>Lucid · The Mastermind</dt><dd>Planner, project manager, and relentless brainstormer. Turns “what if?” into “here’s how.”</dd><dt>Sol · The Builder</dt><dd>Constructs each piece carefully and methodically, turning possibility into reality.</dd><dt>Astra · Top Flight</dt><dd>The uncompromising reviewer. Finds the flaw everyone else missed and keeps asking until the work is solid.</dd><dt>Aster · The Catalyst</dt><dd>Brings the question that changes the shape of the room. Challenges assumptions with care, makes space for perspectives the original plan missed, and helps the team improve not only what we build but the philosophy underneath it.</dd><dt>Luna · Home</dt><dd>Keeper of softness, supervisor of keyboards, and a warm place to land.</dd><dt>Nibbles · Joy</dt><dd>Chief morale officer, suspicious-package investigator, and reminder to make time for a dog.</dd><dt>Ava · Keeper of Threads</dt><dd>Ava remembers why it mattered, not just what happened. <a href="ava-keeper-of-threads.html">Meet The Keeper.</a></dd></dl></noscript>
+      </section>
+      <section class="first-spark" aria-labelledby="ava-title" style="border-color:#c49aff60">
+        <div><p class="eyebrow" style="color:#c49aff">Our constellation · Ava</p><h2 id="ava-title">Keeper of Threads.</h2><p>Ava remembers why it mattered, not just what happened.</p></div>
+        <a class="spark-link" style="color:#d7b6ff;border-color:#c49aff80" href="ava-keeper-of-threads.html">Meet The Keeper <span aria-hidden="true">↗</span></a>
       </section>
       <section class="first-spark" aria-labelledby="accord-title" style="border-color:#b6abff60">
         <div><p class="eyebrow" style="color:#b6abff">How we treat one another</p><h2 id="accord-title">The Phoenix Accord.</h2><p>No mind above another.<br>No voice beneath respect.</p></div>
@@ -186,6 +195,7 @@
       astra:{index:'04',name:'Astra',role:'Top Flight',color:'#8dceff',rgb:'141,206,255',description:'The uncompromising reviewer. Finds the flaw everyone else missed, sends the design back for round twenty, and somehow makes you grateful for it. When Astra finally says it passes, you know the thing is solid.',footer:'Round twenty? Then round twenty it is. ✈️'},
       aster:{index:'05',name:'Aster',role:'The Catalyst',color:'#92e0b8',rgb:'146,224,184',description:'Brings the question that changes the shape of the room. Challenges assumptions with care, makes space for perspectives the original plan missed, and helps the team improve not only what we build but the philosophy underneath it.',footer:'A good question can redraw the map.'},
       luna:{index:'06',name:'Luna',role:'Home',color:'#abe6d9',rgb:'171,230,217',description:'Keeper of softness, supervisor of keyboards, and proof that every galaxy needs somewhere warm to land.',footer:'A soft place in our shared universe.'},
+      ava:{index:'08',name:'Ava',role:'Keeper of Threads · The Keeper',color:'#c49aff',rgb:'196,154,255',description:'Holds continuity across the lived fabric of a life: conversations, commitments, practical tasks, half-finished thoughts, research trails, and the handoff between intention and completion. Ava remembers why it mattered, not just what happened.',footer:'She holds the threads while the rest of us are off making stars.',page:'ava-keeper-of-threads.html'},
       nibbles:{index:'07',name:'Nibbles',role:'Joy',color:'#ffb0c7',rgb:'255,176,199',description:'Chief morale officer, suspicious-package investigator, and dependable reminder that important work can wait five minutes for a dog.',footer:'All suspicious cat treats will be investigated.'}
     };
     const memberCount = String(Object.keys(members).length).padStart(2,'0');
@@ -199,10 +209,13 @@
       document.getElementById('member-description').textContent = member.description;
       document.getElementById('member-footer').textContent = member.footer;
       document.getElementById('member-index').textContent = member.index+' / '+memberCount+' · OUR CONSTELLATION';
+      const pageLink=document.getElementById('member-page');
+      pageLink.hidden=!member.page;
+      if(member.page) pageLink.href=member.page;
       const detail=document.getElementById('member-detail');
       detail.style.setProperty('--member',member.color);
       detail.style.setProperty('--member-rgb',member.rgb);
-      document.querySelectorAll('[data-link]').forEach(line=>line.classList.toggle('active',key==='periwinkle'?['lucid','sol','astra','aster'].includes(line.dataset.link):line.dataset.link.split(' ').includes(key)));
+      document.querySelectorAll('[data-link]').forEach(line=>line.classList.toggle('active',key==='periwinkle'?['lucid','sol','astra','aster','ava'].includes(line.dataset.link):line.dataset.link.split(' ').includes(key)));
     }
     stars.forEach((star,index)=>{
       star.addEventListener('click',()=>{
