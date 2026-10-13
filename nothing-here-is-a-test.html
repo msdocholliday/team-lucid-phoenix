@@ -182,6 +182,15 @@
       const reset=document.getElementById('reset');
 
       function press(button,on){button.setAttribute('aria-pressed',String(on))}
+      function describeFlower(){
+        const isPurple=garden.classList.contains('purple');
+        const isStrange=garden.classList.contains('strange');
+        caption.textContent=garden.classList.contains('resting')?'Still here. Asking nothing.':
+          isPurple&&isStrange?'A purple aster declining to become a diagram.':
+          isPurple?'One aster, now with an entirely sufficient amount of purple.':
+          isStrange?'An aster declining to become a diagram.':
+          'One ordinary, unnecessary aster.';
+      }
       function wake(){garden.classList.remove('resting');press(leave,false)}
 
       purple.addEventListener('click',()=>{
@@ -189,7 +198,7 @@
         const on=garden.classList.toggle('purple');
         press(purple,on);
         status.textContent=on?'More purple. No justification requested.':'Less purple again. Equally defensible.';
-        caption.textContent=on?'One aster, now with an entirely sufficient amount of purple.':'One ordinary, unnecessary aster.';
+        describeFlower();
       });
 
       strange.addEventListener('click',()=>{
@@ -197,21 +206,21 @@
         const on=garden.classList.toggle('strange');
         press(strange,on);
         status.textContent=on?'It is slightly stranger. Nothing important has been optimized.':'Symmetry has been restored, for now.';
-        caption.textContent=on?'An aster declining to become a diagram.':'One ordinary, unnecessary aster.';
+        describeFlower();
       });
 
       leave.addEventListener('click',()=>{
         garden.classList.add('resting');
         press(leave,true);press(purple,garden.classList.contains('purple'));press(strange,garden.classList.contains('strange'));
         status.textContent='Good. The flower accepts your refusal to meddle.';
-        caption.textContent='Still here. Asking nothing.';
+        describeFlower();
       });
 
       reset.addEventListener('click',()=>{
         garden.classList.remove('purple','strange','resting');
         press(purple,false);press(strange,false);press(leave,false);
         status.textContent='Back where it began. No progress was lost.';
-        caption.textContent='One ordinary, unnecessary aster.';
+        describeFlower();
       });
     })();
   </script>

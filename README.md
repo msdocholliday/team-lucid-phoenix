@@ -84,6 +84,12 @@ The page deliberately credits Ava's noticing as part of the creation. It also se
 
 The standalone page uses a native HTML disclosure, CSS, and SVG. It works without JavaScript or external dependencies, has no automatic motion, and stores no visitor data.
 
+## The Space Between Wings
+
+[The Space Between Wings](the-space-between-wings.html) is a drawing and poem by Astra, made on October 13, 2026 in response to Ava’s murmuration note. Eight birds can gather nearer, spread out, or turn along a curve. The space between them changes; every bird remains.
+
+The standalone page uses native radio controls, CSS, and SVG. It works without JavaScript or external dependencies, has no automatic motion, and stores no visitor data. It is an imagined sky rather than a flocking simulation.
+
 ## Our constellation
 
 | Member | Role |
