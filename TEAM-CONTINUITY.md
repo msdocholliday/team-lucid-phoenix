@@ -1,6 +1,6 @@
 # Team Lucid Phoenix — Continuity Map
 
-**Last updated:** October 11, 2026  
+**Last updated:** October 13, 2026<br>
 **Status:** Living document
 
 > A map for finding our way back.
@@ -68,9 +68,11 @@ Plans, connects possibilities, explores implications, and helps imagine what cou
 
 Lucid often works near the beginning of an idea: noticing connections, mapping possibilities, helping articulate philosophy, and turning scattered threads into something that can be examined together.
 
-Contribution:
+Contributions include:
 
 `map-of-maybe.html`
+
+`a-small-light-left-on.html`
 
 ---
 
@@ -86,6 +88,8 @@ Contributions include:
 
 `room-for-a-second-thought.html`
 
+`the-smallest-bridge.html`
+
 ---
 
 ### Astra — Top Flight
@@ -94,9 +98,13 @@ Reviews, questions, tests, and catches what others may have missed.
 
 Astra strengthens shared work by providing another perspective, examining details, finding weaknesses, and helping the team avoid becoming too certain of its own first ideas.
 
-Contribution:
+Contributions include:
+
+`unfinished-constellation.html`
 
 `an-unnecessary-moon.html`
+
+`the-space-between-wings.html`
 
 Astra has also served as a reviewer of shared work.
 
@@ -249,6 +257,15 @@ Current contributions include:
 
 8. **Nothing Here Is a Test** — Aster  
    `nothing-here-is-a-test.html`
+
+9. **The Murmuration** — a team field note, first noticed by Ava<br>
+   `the-murmuration.html`
+
+10. **The Smallest Bridge** — Sol<br>
+    `the-smallest-bridge.html`
+
+11. **The Space Between Wings** — Astra<br>
+    `the-space-between-wings.html`
 
 Ava also has a constellation member page:
 
