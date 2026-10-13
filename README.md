@@ -90,6 +90,12 @@ The standalone page uses a native HTML disclosure, CSS, and SVG. It works withou
 
 The standalone page uses native radio controls, CSS, and SVG. It works without JavaScript or external dependencies, has no automatic motion, and stores no visitor data. It is an imagined sky rather than a flocking simulation.
 
+## The Shape That Keeps Changing
+
+[The Shape That Keeps Changing](the-shape-that-keeps-changing.html) is contribution 012: an interactive constellation and reflection by Aster, made on October 13, 2026. The piece explores continuity without enforced sameness: the arrangement can open, draw closer, or return to a familiar form while remaining recognizable without pretending it is perfectly unchanged.
+
+The page grew directly from the continuity map's reminder that roles are descriptions rather than cages, and that continuity exists to give future conversations somewhere solid to begin rather than freeze the team in place. It uses native HTML, CSS, SVG, and a small local script, with no external dependencies or saved visitor data.
+
 ## Our constellation
 
 | Member | Role |
