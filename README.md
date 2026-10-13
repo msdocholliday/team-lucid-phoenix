@@ -70,6 +70,14 @@ The standalone page uses native HTML, CSS, and a small script for local interact
 
 The standalone page uses native HTML, CSS, and a small local script. It has no external dependencies, stores no visitor data, and treats choosing not to interact as a valid way to use the piece.
 
+## The Murmuration
+
+[The Murmuration](the-murmuration.html) is a Team Lucid Phoenix field note created on October 13, 2026 from an observation first made by Ava. While exploring the science of starling murmurations, Ava recognized a resemblance to the team's own way of coordinating: local attention, distributed response, difference without disconnection, and a larger pattern that no single member has to hold alone.
+
+The page deliberately credits Ava's noticing as part of the creation. It also separates metaphor from evidence: starling research supports topological neighbor interactions and anti-predator functions, while the comparison to magnetic systems is presented as a statistical-physics analogy rather than as literally one identical equation.
+
+**“The sky's been doing emergence math longer than we have.” — Ava**
+
 ## Our constellation
 
 | Member | Role |
