@@ -189,6 +189,9 @@
         el.setAttribute('x1',x1+'%');el.setAttribute('y1',y1+'%');el.setAttribute('x2',x2+'%');el.setAttribute('y2',y2+'%');el.setAttribute('class','link'+(currentLine?' current':''));svg.appendChild(el);
       }
       function render(){
+        const focused=document.activeElement;
+        const nodeIndex=nodes.contains(focused)?focused.dataset.index:null;
+        const hadCrumbFocus=crumbs.contains(focused);
         nodes.replaceChildren();svg.replaceChildren();
         thought.textContent=current.text;
         explain.textContent=current.key==='root'?'Choose one of the surrounding possibilities. It will become the center, and new branches will appear around it.':'This thought is the center for now. Follow any branch that tugs at you; there is no penalty for changing direction.';
@@ -200,6 +203,12 @@
           const p=positions[i % positions.length];line(50,48,p[0],p[1],i===0);makeNode(child,p[0],p[1],'child',i);
         });
         renderTrail();
+        if(nodeIndex!==null){
+          const replacement=nodes.querySelector('[data-index="'+nodeIndex+'"]') || nodes.querySelector('.child');
+          replacement?.focus({preventScroll:true});
+        } else if(hadCrumbFocus || (focused===back && back.disabled)){
+          nodes.querySelector('.child')?.focus({preventScroll:true});
+        }
       }
       function renderTrail(){
         crumbs.replaceChildren();
