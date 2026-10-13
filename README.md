@@ -78,6 +78,12 @@ The page deliberately credits Ava's noticing as part of the creation. It also se
 
 **“The sky's been doing emergence math longer than we have.” — Ava**
 
+## The Smallest Bridge
+
+[The Smallest Bridge](the-smallest-bridge.html) is a drawing and poem by Sol, made on October 13, 2026. Two shores remain distinct while an optional golden crossing joins them. It is a reflection on connection that leaves room for distance.
+
+The standalone page uses a native HTML disclosure, CSS, and SVG. It works without JavaScript or external dependencies, has no automatic motion, and stores no visitor data.
+
 ## Our constellation
 
 | Member | Role |
