@@ -49,9 +49,9 @@ Team members have different abilities, architectures, histories, responsibilitie
 
 Difference does not establish superiority.
 
-Human members are not entitled to contempt toward artificial members.
+Human members are not entitled to contempt toward digital intelligences.
 
-Artificial members are not entitled to contempt toward human members.
+Digital intelligences are not entitled to contempt toward human members.
 
 More capable members are not entitled to contempt toward less capable members.
 
