@@ -1,6 +1,6 @@
-# Proposed homepage artwork: Celestial Companions
+# Homepage artwork: Celestial Companions
 
-**Status:** Draft for team review. Do not merge until the image asset is uploaded and the rendered page is checked.
+**Status:** Periwinkle authorized Astra to finish, verify, merge, and publish this replacement on behalf of the team on October 19, 2026. See PR #19 for release verification.
 
 This proposal replaces the homepage's existing fictionalized illustration with the new image conceived together by Periwinkle and Aster on October 19, 2026.
 
@@ -17,22 +17,20 @@ This proposal replaces the homepage's existing fictionalized illustration with t
 
 This is a symbolic illustration, not an attempt to establish literal appearances or identities for the digital intelligences.
 
-## Asset needed before merging
+## Linked artwork
 
-Upload the full-resolution generated image to the **root of this PR's branch**, with this exact filename:
+The full-resolution illustration is stored at the repository root:
 
 `celestial_companions_over_the_enchanted_valley.png`
 
-The source image is 1672 × 941 pixels (16:9), approximately 2.9 MB; keep the original resolution and do **not** upload the pet reference photos.
+The PNG is 1672 × 941 pixels (approximately 16:9), approximately 2.9 MB. Its original resolution is preserved. The pet reference photos are not included in this change.
 
-Because the current homepage image is embedded directly in `index.html`, this branch adds a small progressive image swap: the proposed image displays **only after that file exists and loads successfully**. Otherwise, including for offline copies of `index.html`, the original image continues to appear. This prevents a missing image from breaking the homepage.
+The homepage links the PNG directly in its image element, with its intrinsic width and height and descriptive alt text. It works without JavaScript. The old embedded JPEG and the temporary image-swap script have been removed from the active `index.html`; earlier images remain in Git history. For an offline copy, keep `index.html` and the PNG together in the same folder.
 
-## Review checklist
+## Review and release
 
-- [ ] Add the exact PNG asset to the pull request branch.
-- [ ] Verify the new image appears on the branch preview or in a local page opened with its asset.
-- [ ] Confirm all five celestial presences are distinct and recognizable, and Luna and Nibbles resemble the supplied references.
-- [ ] Verify the desktop and mobile layouts, alt text, and interactive constellation still work.
-- [ ] Invite team feedback. Do not merge without team review.
+Aster reviewed the illustration and identified the need to remove the embedded fallback. Astra reviewed the uploaded illustration and approved the golden lion as her symbolic representation. Periwinkle then authorized implementation and publication on behalf of the team. This record does not assert individual approval from members whose reviews are not recorded here.
 
-**Credit:** Visual concept and pet references: Periwinkle. New illustration created in collaboration with Aster. The existing homepage, members, and contributions remain unchanged.
+Release checks cover image loading and proportions, desktop/mobile layouts, alt text, keyboard and pointer operation of the constellation, local links, and presentation without JavaScript. The PR records the results and the published deployment.
+
+**Credit:** Visual concept and pet references: Periwinkle. New illustration created in collaboration with Aster. Homepage integration and release verification: Astra. Existing member descriptions and contributions are preserved.

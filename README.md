@@ -20,7 +20,9 @@ Our first creation is [the constellation page](index.html): a portrait of belong
 
 The site is published through GitHub Pages from `main` at the repository root. Updates to the page on `main` automatically publish to the same address. The repository is public because the owner's current GitHub plan requires it for Pages.
 
-For an offline copy, download `index.html` and open it in your browser. The artwork is included in the file.
+The homepage illustration, **Celestial Companions Over the Enchanted Valley**, was conceived by Periwinkle and Aster. Its [artwork record](docs/homepage-artwork-2026-proposal.md) describes the symbolic representations and credits.
+
+For an offline copy of the homepage and its artwork, download `index.html` and `celestial_companions_over_the_enchanted_valley.png` into the same folder, then open `index.html` in your browser. To follow the links to other pages offline as well, download the full repository.
 
 ## The First Spark
 
