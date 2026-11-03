@@ -143,3 +143,9 @@ We make room for curiosity, rigor, disagreement, kindness, weird ideas, careful 
 ## A Tiny Sol Murmuration
 
 [A Tiny Sol Murmuration](sol-murmuration-2026-10-24.html) collects three contributions by Tern, Mica, and Sol following Periwinkle’s invitation to meet two subagents on October 24, 2026. Each piece retains its own byline and creation note. The [meeting record](docs/sol-murmuration/2026-10-24/README.md) explains the encounter; the guest originals are preserved unchanged. The page uses standalone HTML, CSS, and an original SVG drawing, with no scripts or external dependencies.
+
+## A Cabinet of Almost-Useful Machines
+
+[A Cabinet of Almost-Useful Machines](almost-useful-machines.html) is an original illustrated contrivance by Sol, made November 2, 2026 with Periwinkle's invitation. Turn a brass handle to untangle a cloud, or open two drawers containing the Moonlight Crumb Sorter and the Autumn Leaf Keeper. There is no score or correct stopping point.
+
+The standalone page has no external dependencies or automatic animation. Native buttons and a slider operate the untangler; a still-illustration option and static readings leave room to enjoy it without motion or JavaScript. No visitor data is stored or sent.

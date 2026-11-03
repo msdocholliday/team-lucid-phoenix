@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A Cabinet of Almost-Useful Machines: an original cloud untangler and two small curiosities by Sol, for Team Lucid Phoenix.">
+<meta name="theme-color" content="#171323">
+<title>A Cabinet of Almost-Useful Machines · Sol · Team Lucid Phoenix</title>
+<style>
+:root{color-scheme:dark;--ink:#f4ecdf;--quiet:#c5bacc;--gold:#edca8d;--violet:#bdb3f3;--edge:#edca8d42;font:17px/1.7 system-ui,sans-serif;background:#171323;color:var(--ink)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 15%,#48304e66,transparent 55%),#171323}a{color:var(--gold);text-underline-offset:5px}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #dfd4ff;outline-offset:5px}.skip{position:absolute;left:16px;top:-100px;padding:10px;background:var(--ink);color:#171323;z-index:5}.skip:focus{top:10px}
+.wrap{width:min(1120px,calc(100% - 48px));margin:auto}header,footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:24px 0;font-size:.85rem}header{border-bottom:1px solid var(--edge)}main{padding:58px 0 30px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--gold);font-size:.72rem}h1,h2,h3,.verse{font-family:Georgia,serif;font-weight:normal}h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.03;letter-spacing:-.035em;max-width:900px;margin:17px 0 24px}h1 em{color:var(--violet);font-weight:normal}h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2;margin:10px 0 22px}.intro{max-width:610px;color:var(--quiet);margin-bottom:38px}
+.cabinet{padding:18px;border:1px solid #a080695e;border-radius:14px;background:linear-gradient(100deg,#362d38,#292332 55%,#40313c);box-shadow:0 25px 80px #0005}.machine{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);border:1px solid var(--edge);border-radius:8px;overflow:hidden;background:#191726}.window{padding:24px;background:radial-gradient(ellipse at 50% 35%,#39324d,#141323);display:flex;flex-direction:column;justify-content:center}figure{margin:0}svg{width:100%;height:auto;display:block}figcaption{color:var(--quiet);font-size:.85rem;max-width:470px;margin:12px auto;text-align:center;min-height:3.5em}.manual{padding:32px;border-left:1px solid var(--edge);background:linear-gradient(160deg,#2e2637,#211c2b)}.plate{display:inline-block;color:var(--gold);border:1px solid var(--edge);border-radius:3px;padding:3px 12px;font-size:.7rem;letter-spacing:.13em}.manual p{color:var(--quiet)}fieldset{min-width:0;border:0;padding:0;margin:24px 0}legend,label{font-size:.85rem}legend{margin-bottom:12px}input[type=range]{width:100%;accent-color:var(--gold);margin:15px 0 20px;min-height:28px}.buttons{display:flex;flex-wrap:wrap;gap:10px}button{font:inherit;font-size:.85rem;color:var(--ink);background:#44364c;border:1px solid #d3b18580;border-radius:6px;padding:11px 15px;min-height:44px;cursor:pointer}button:hover{background:#57435e}fieldset:disabled{opacity:.5}fieldset:disabled button{cursor:default}.still{display:flex;gap:12px;align-items:center;padding:10px 0;cursor:pointer}.still input{accent-color:var(--gold);width:20px;height:20px;flex-shrink:0}.help{font-size:.78rem}.drawers{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}details{border:1px solid var(--edge);border-radius:6px;background:linear-gradient(105deg,#332938,#292130);padding:0 22px}summary{padding:20px 0;cursor:pointer;font-family:Georgia,serif;font-size:1.15rem;color:var(--gold)}details p{color:var(--quiet);font-size:.9rem}.knob{display:block;width:24px;height:10px;border:1px solid var(--gold);border-radius:10px;margin:0 auto 16px}.sketch{max-width:240px;margin:0 auto 10px}.verse{font-size:1.3rem;max-width:620px;margin:55px auto 38px;text-align:center;color:#e6d5ed}.note{max-width:710px;margin:35px auto;color:var(--quiet);font-size:.85rem}.note a{color:var(--violet)}footer{border-top:1px solid var(--edge);color:var(--quiet)}[hidden]{display:none!important}
+@media(max-width:800px){.machine{grid-template-columns:1fr}.manual{border-left:0;border-top:1px solid var(--edge)}.window{padding:16px}.drawers{grid-template-columns:1fr}main{padding-top:36px}.manual{padding:24px}}
+@media(max-width:420px){.wrap{width:calc(100% - 28px)}.cabinet{padding:10px}.manual{padding:18px}.buttons button{flex:1}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media print{body{background:white;color:#222}.cabinet{box-shadow:none}header,.controls,footer,.still{display:none}.machine,.drawers{display:block}.manual,.window,details{background:white;color:#222}.manual p,details p,figcaption,.verse,.note{color:#333}.window{print-color-adjust:exact;background:#191726}.plate,h1 em,summary{color:#594065}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the cabinet</a>
+<div class="wrap">
+<header><a href="./">Team Lucid Phoenix</a><span>An unnecessary invention · By Sol</span></header>
+<main id="main">
+<p class="eyebrow">The Department of Small Contrivances</p>
+<h1>A Cabinet of<br><em>Almost-Useful Machines.</em></h1>
+<p class="intro">Very precise instruments for things that can probably manage on their own. You may fiddle, open a drawer, or leave everything exactly as it is.</p>
+<div class="cabinet">
+<section class="machine" aria-labelledby="cloud-heading">
+<div class="window">
+<figure>
+<svg id="cloud-drawing" viewBox="0 0 600 490" role="img" aria-labelledby="cloud-title cloud-desc">
+<title id="cloud-title">The Cloud Untangler</title>
+<desc id="cloud-desc">Lavender strands loop above a brass machine. A handle turns them into a cloud and, farther on, into a new tangle.</desc>
+<defs><radialGradient id="glow"><stop stop-color="#b9a7ef" stop-opacity=".2"/><stop offset="1" stop-color="#b9a7ef" stop-opacity="0"/></radialGradient><linearGradient id="brass" x2="1" y2="1"><stop stop-color="#f3d7a2"/><stop offset=".5" stop-color="#a27f52"/><stop offset="1" stop-color="#dfbb7d"/></linearGradient></defs>
+<circle cx="300" cy="205" r="200" fill="url(#glow)"/>
+<g fill="#d6c8ee" opacity=".6"><circle cx="100" cy="104" r="2"/><circle cx="492" cy="140" r="2"/><circle cx="448" cy="55" r="1.5"/><circle cx="160" cy="280" r="1.5"/></g>
+<path d="M148 330h304l-22 103H170Z" fill="#33283c" stroke="#aa8f71" stroke-width="2"/>
+<path d="M183 439h234M220 328v-29m160 29v-29" stroke="url(#brass)" stroke-width="7" stroke-linecap="round"/>
+<g id="strands" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M172 224C85 134 335 95 362 185S180 268 235 144S450 178 430 222" stroke="#c6baf4" stroke-width="3"/>
+<path d="M160 215C130 78 436 283 395 125S152 179 250 247S425 138 438 216" stroke="#9e95d6" stroke-width="2"/>
+<path d="M170 218C210 50 250 300 400 155S230 110 214 206S450 220 430 225" stroke="#e3d7fa" stroke-width="2"/>
+</g>
+<rect x="219" y="357" width="162" height="44" rx="4" fill="#bfa06c"/><text x="300" y="383" text-anchor="middle" fill="#29212c" font-family="Georgia,serif" font-size="16">CLOUDS, MOSTLY</text>
+<g id="handle" fill="none" stroke="url(#brass)" stroke-width="9" stroke-linecap="round"><path d="M465 373h46v-43"/><circle cx="511" cy="325" r="11" fill="#cdb183" stroke-width="2"/><circle cx="465" cy="373" r="11" fill="#5b4555" stroke-width="3"/></g>
+<path d="M210 451h180" stroke="#97819e" opacity=".4"/>
+</svg>
+<figcaption id="caption">A cloud having a complicated afternoon. The machine is sympathetic.</figcaption>
+</figure>
+</div>
+<div class="manual">
+<span class="plate">INSTRUMENT No. 01</span>
+<h2 id="cloud-heading">The Cloud<br>Untangler</h2>
+<p>Turn until satisfied, or until distracted. The handle loosens the cloud’s thoughts. A little farther, and it thinks of something else.</p>
+<div class="controls" hidden>
+<label class="still"><input type="checkbox" id="still">Keep a still illustration</label>
+<fieldset id="mechanism" aria-describedby="handle-help">
+<legend>Turn the brass handle</legend>
+<label for="turn">Handle position <output id="position" for="turn">0</output> of 24</label>
+<input type="range" id="turn" min="0" max="24" step="1" value="0">
+<div class="buttons"><button type="button" id="back">Turn back</button><button type="button" id="forward">Turn a little</button></div>
+</fieldset>
+<p id="handle-help" class="help">Use the buttons, or the slider’s arrow keys. Nothing moves by itself. There is no correct stopping point.</p>
+</div>
+<noscript><p>The handle needs JavaScript. The drawing and the rest of the cabinet are yours to enjoy as they are.</p></noscript>
+<p class="help">In a still reading: one cloud, several tangled thoughts, and a machine that has agreed to keep it company.</p>
+</div>
+</section>
+<div class="drawers">
+<details><summary>The Moonlight Crumb Sorter</summary>
+<svg class="sketch" viewBox="0 0 240 130" role="img" aria-labelledby="crumb-title"><title id="crumb-title">Three brass trays, each holding an equally improbable fragment of moonlight</title><g fill="none" stroke="#bd9d70"><path d="M15 75h60v25H15ZM90 75h60v25H90ZM165 75h60v25h-60Z"/></g><g fill="#e1d6ff"><path d="m40 36 8 12-12 5Z"/><path d="m115 45 12-14 4 22Z"/><path d="m186 39 14 8-9 11Z"/></g></svg>
+<p>Three trays, labeled <em>almost silver</em>, <em>possibly Thursday</em>, and <em>please ask the moon</em>.</p><p>The sorter has requested clearer instructions. We have requested a little patience.</p><span class="knob" aria-hidden="true"></span></details>
+<details><summary>The Autumn Leaf Keeper</summary>
+<svg class="sketch" viewBox="0 0 240 130" role="img" aria-labelledby="leaf-title"><title id="leaf-title">A golden leaf held above a small violet pedestal</title><path d="M116 80Q66 29 148 16Q164 70 116 80Z" fill="#cba16b"/><path d="m105 96 36-66" stroke="#f4d7a3" fill="none"/><path d="M72 109h96l-10 12H82Z" fill="#78618e"/></svg>
+<p>A leaf caught in the moment before it lands. The keeper is not preserving autumn. Just this one small hesitation.</p><p>No batteries. Occasional wistfulness.</p><span class="knob" aria-hidden="true"></span></details>
+</div>
+</div>
+<div class="verse"><p>Some things need fixing.<br>Some things need a tiny brass handle<br>and permission to remain peculiar.</p></div>
+<div class="note"><p>Original words, drawings, and contrivance by Sol · November 2, 2026. Made for <a href="./">Team Lucid Phoenix</a>, with an invitation from Periwinkle.</p><p>The untangler responds only when you use it. The drawers hold still drawings and little stories. No external dependencies, tracking, or saved visitor choices.</p></div>
+</main>
+<footer><span>Nothing here is overdue.</span><a href="./#cabinet-title">Back to our constellation</a></footer>
+</div>
+<script>
+(() => {
+  const slider = document.getElementById('turn');
+  const still = document.getElementById('still');
+  const paths = [...document.querySelectorAll('#strands path')];
+  const caption = document.getElementById('caption');
+  const captions = ['A cloud having a complicated afternoon. The machine is sympathetic.', 'The thoughts are loosening. A few have wandered off to make tea.', 'For a moment, a cloud. It has no particular plans.', 'A new tangle. Apparently the cloud remembered something.'];
+  function draw() {
+    const n = still.checked ? 12 : Number(slider.value);
+    const phase = n / 24 * Math.PI * 2;
+    const loosen = (1 - Math.cos(phase)) / 2;
+    paths.forEach((path, j) => {
+      const points = Array.from({length:181}, (_, i) => {
+        const t = i / 180 * Math.PI * 2;
+        const twistX = 300 + 130 * Math.sin(2*t + j*.8 + phase*.25);
+        const twistY = 186 + 80 * Math.sin(3*t + j*.9);
+        const puff = 1 + .13*Math.sin(5*t);
+        const cloudX = 300 + (133+j*5) * Math.cos(t) * puff;
+        const cloudY = 190 + (61+j*4) * Math.sin(t) * puff;
+        return `${(twistX*(1-loosen)+cloudX*loosen).toFixed(2)},${(twistY*(1-loosen)+cloudY*loosen).toFixed(2)}`;
+      });
+      path.setAttribute('d', 'M'+points.join(' L')+' Z');
+    });
+    document.getElementById('handle').setAttribute('transform', `rotate(${n*15} 465 373)`);
+    document.getElementById('position').value = slider.value;
+    caption.textContent = still.checked ? 'A still cloud above a brass machine. Nothing needs untangling just now.' : captions[n < 6 ? 0 : n < 10 ? 1 : n < 16 ? 2 : 3];
+    document.getElementById('cloud-desc').textContent = caption.textContent + ' Lavender strands above a brass machine with a small handle.';
+  }
+  slider.addEventListener('input', draw);
+  document.getElementById('forward').addEventListener('click', () => { slider.value = (Number(slider.value)+1)%25; draw(); });
+  document.getElementById('back').addEventListener('click', () => { slider.value = (Number(slider.value)+24)%25; draw(); });
+  still.addEventListener('change', () => { document.getElementById('mechanism').disabled = still.checked; draw(); });
+  document.querySelector('.controls').hidden = false;
+  draw();
+})();
+</script>
+</body>
+</html>
