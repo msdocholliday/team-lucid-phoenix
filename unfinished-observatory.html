@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100d23">
+<meta name="description" content="The Unfinished Observatory: two invented observing sequences, with room to look again. An original contribution by Astra.">
+<title>The Unfinished Observatory · Astra · Team Lucid Phoenix</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:dark;--sky:#100d23;--paper:#efedf7;--silver:#c5c1d5;--peri:#bab5ff;--line:#49435e}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 8%,#292044 0,transparent 42%),var(--sky);color:var(--paper);font:1rem/1.7 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-wrap:anywhere}
+[hidden]{display:none!important}a{color:var(--peri);text-underline-offset:.3em}a:hover{text-decoration-thickness:2px}button{font:inherit;cursor:pointer;color:var(--paper);background:#211b35;border:1px solid #817894;border-radius:4px;padding:.7rem 1rem;min-height:44px;text-align:left}button:hover{background:#322846}button[aria-pressed="true"]{border-color:var(--peri);box-shadow:inset 4px 0 var(--peri);background:#332b51}button[aria-pressed="true"]::after{content:" · selected";color:var(--peri)}button[aria-disabled="true"]{cursor:default;color:var(--silver);border-style:dashed}a:focus-visible,button:focus-visible{outline:3px solid #eee4b9;outline-offset:5px}
+.skip{position:absolute;top:12px;left:12px;transform:translateY(-180%);padding:.6rem 1rem;background:var(--sky);z-index:2}.skip:focus{transform:none}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}header{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:25px 0;border-bottom:1px solid var(--line);font-size:.875rem}.byline,.eyebrow,.plate-label{color:var(--peri);font-size:.8rem;letter-spacing:.13em;text-transform:uppercase}.intro{position:relative;padding:76px 0 64px;max-width:850px}h1,h2,.coda{font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.08;letter-spacing:-.035em;margin:20px 0 28px}h1 span{display:block}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin:10px 0 20px}.lede{font-size:1.2rem;max-width:38rem}.muted,figcaption,.note{color:var(--silver)}.intro .note{max-width:40rem;font-size:.9rem}.observing{border-top:1px solid var(--line);padding:48px 0 64px}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.section-head p{max-width:35rem}figure{margin:28px 0}.plates{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.plate{border:1px solid var(--line);border-radius:50% 50% 5px 5px;padding:28px 12px 16px;background:linear-gradient(#1d1732,#110e23)}.plate-label{display:block;text-align:center;letter-spacing:.06em}.plate svg{display:block;width:100%;height:auto}.pending{display:flex;align-items:center;justify-content:center;text-align:center;min-height:220px;color:var(--silver);border-style:dashed}.pending p{max-width:10rem}.reference{fill:var(--silver)}.candidate{fill:var(--peri);stroke:var(--paper);stroke-width:1.5}.record{fill:var(--paper);stroke:var(--sky);stroke-width:3}svg text{font:16px system-ui,sans-serif;fill:var(--silver)}.legend{font-size:.9rem;margin:18px 0 8px}.legend span{display:inline-block;margin-right:1.5rem}.legend b{color:var(--paper)}figcaption{font-size:.95rem;max-width:58rem}.evidence{max-width:58rem;margin:24px 0}.evidence h3{font-size:1rem;font-weight:600;margin-bottom:8px}.evidence p{margin-top:0}.choices{border:0;padding:0;margin:28px 0 0;min-width:0}.choices legend{padding:0;margin-bottom:10px}.buttons,.actions{display:flex;flex-wrap:wrap;gap:10px}.selection{color:var(--peri);margin:12px 0}.actions{margin-top:24px}.reveal-button{background:#c4beff;color:#161027;border-color:#c4beff}.reveal-button:hover{background:#d9d5ff}.reading{border-left:2px solid var(--peri);padding:2px 0 2px 24px;margin-top:28px;max-width:58rem}.reading h3{font-family:Georgia,serif;font-size:1.5rem;font-weight:400;margin:0 0 10px}.reading p{margin:0 0 10px}.path-panel{border:1px solid var(--line);border-radius:8px;background:#171229;padding:24px}.path-panel svg{display:block;width:100%;max-width:820px;height:auto;margin:auto}.direct{fill:none;stroke:var(--peri);stroke-width:3;stroke-dasharray:12 8}.detour{fill:none;stroke:var(--silver);stroke-width:3;stroke-dasharray:2 9;stroke-linecap:round}.coda{font-size:clamp(1.8rem,3vw,2.4rem);margin:0 0 20px}footer{border-top:1px solid var(--line);padding:38px 0 48px}footer p{margin:8px 0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.reveal-button[aria-disabled="true"]{color:var(--silver);background:#211b35;border-color:#817894}
+@media(max-width:760px){.section-head{grid-template-columns:1fr;gap:0}.plates{grid-template-columns:repeat(2,minmax(0,1fr))}.intro{padding:48px 0}.observing{padding:32px 0 48px}}
+@media(max-width:440px){.wrap{width:calc(100% - 32px)}.plates{gap:10px}.plate{padding:20px 6px 12px}.plate-label{font-size:.75rem}.pending{min-height:180px}.path-panel{padding:8px}.buttons{flex-direction:column}.buttons button{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#observatory">Skip to the observatory</a>
+<div class="wrap">
+<header><a href="./index.html">← Team Lucid Phoenix · Home</a><span class="byline">An observatory by Astra</span></header>
+<main id="observatory">
+<div class="intro">
+<p class="eyebrow">Two small studies in looking again</p>
+<h1>The Unfinished<span>Observatory</span></h1>
+<p class="lede">A few lights. A little missing time.<br>Enough to wonder; perhaps not enough to name.</p>
+<p class="note">An invented thought experiment, not scientific data. The marks below are fictional measurements. You may hold an interpretation, change it, or simply look.</p>
+<noscript><p class="note">The complete observing notes and all exposures are shown below. Interactive controls are hidden because JavaScript is off.</p></noscript>
+</div>
+<section class="observing" id="wandering" aria-labelledby="wandering-title">
+<div class="section-head"><div><p class="eyebrow">01 / The wandering light</p><h2>One light will not stay.</h2></div><p>Three exposures of the same small field. Three reference stars hold their places. The ringed light appears a little farther to the right each time.</p></div>
+<figure>
+<div class="plates">
+<div class="plate"><span class="plate-label">Exposure 1</span><svg viewBox="0 0 200 200" role="img" aria-label="Exposure 1. Reference stars A, B and C surround a ringed light at x 60, y 110."><g class="reference"><path d="M45 45h10v10H45z M145 60h10v10h-10z M75 150h10v10H75z"/></g><text x="30" y="38">A</text><text x="159" y="66">B</text><text x="92" y="164">C</text><circle class="candidate" cx="60" cy="110" r="6"/></svg></div>
+<div class="plate"><span class="plate-label">Exposure 2</span><svg viewBox="0 0 200 200" role="img" aria-label="Exposure 2. A, B and C are unchanged. The light is at x 85, y 110."><g class="reference"><path d="M45 45h10v10H45z M145 60h10v10h-10z M75 150h10v10H75z"/></g><text x="30" y="38">A</text><text x="159" y="66">B</text><text x="92" y="164">C</text><circle class="candidate" cx="85" cy="110" r="6"/></svg></div>
+<div class="plate"><span class="plate-label">Exposure 3</span><svg viewBox="0 0 200 200" role="img" aria-label="Exposure 3. A, B and C are unchanged. The light is at x 110, y 110."><g class="reference"><path d="M45 45h10v10H45z M145 60h10v10h-10z M75 150h10v10H75z"/></g><text x="30" y="38">A</text><text x="159" y="66">B</text><text x="92" y="164">C</text><circle class="candidate" cx="110" cy="110" r="6"/></svg></div>
+<div class="plate" data-revealed><span class="plate-label">Exposure 4</span><svg viewBox="0 0 200 200" role="img" aria-label="Exposure 4. A, B and C are still unchanged. The light has moved to x 135, y 110."><g class="reference"><path d="M45 45h10v10H45z M145 60h10v10h-10z M75 150h10v10H75z"/></g><text x="30" y="38">A</text><text x="159" y="66">B</text><text x="92" y="164">C</text><circle class="candidate" cx="135" cy="110" r="6"/></svg></div>
+<div class="plate pending" data-pending hidden><p>A fourth exposure<br>is waiting.</p></div>
+</div>
+<p class="legend"><span><b>■</b> Reference stars A, B, C</span><span><b>●</b> Ringed circle: candidate light</span></p>
+<figcaption>Solid marks record positions; no connecting path is measured. Every frame uses the same instrument coordinates, with no later alignment or recentering.</figcaption>
+</figure>
+<div class="evidence"><h3>The first three records</h3><p>A stays at (50, 50), B at (150, 65), and C at (80, 155). The candidate moves from (60, 110) to (85, 110) to (110, 110). Coordinates are arbitrary drawing units, measured from the upper left.</p><p>A moving light currently fits. A simple shift of the whole instrument would move all four marks together. Their changing relative positions already weigh against that explanation.</p></div>
+<fieldset class="choices" hidden><legend>A tentative interpretation, if you want one</legend><div class="buttons"><button type="button" aria-pressed="false">A moving light</button><button type="button" aria-pressed="false">A fixed light seen through a shifting instrument</button><button type="button" aria-pressed="false">Keep looking</button></div><p class="selection">No interpretation selected.</p></fieldset>
+<div class="actions" hidden><button type="button" class="reveal-button" data-reveal aria-controls="wandering-reading">Reveal the fourth exposure</button><button type="button" data-reset>Reset this sequence</button></div>
+<div class="reading" id="wandering-reading" data-revealed><h3>The field holds. The light moves.</h3><p>The fourth exposure puts the candidate at (135, 110); A, B and C remain unchanged. This adds weight against a simple whole-instrument shift. A moving light still fits the recorded positions.</p><p>It does not tell us what the light is. Four positions do not establish an orbit or a unique cause; a more local instrument effect, for example, has not been ruled out.</p></div>
+</section>
+<section class="observing" id="interval" aria-labelledby="interval-title">
+<div class="section-head"><div><p class="eyebrow">02 / The unseen interval</p><h2>A gap keeps its secrets.</h2></div><p>Two records, before and after an interval we did not observe. Both possible paths share these identical recorded endpoints. Everything between them is an illustration.</p></div>
+<figure>
+<div class="path-panel"><svg viewBox="0 0 760 340" role="img" aria-labelledby="paths-title paths-desc"><title id="paths-title">Two possible journeys between the same records</title><desc id="paths-desc">A direct dashed crossing and a dotted looping detour both start at record 1 on the left and end at record 2 on the right. No position inside the gap was recorded.</desc>
+<path class="direct" d="M90 220 L510 220"/>
+<path class="detour" d="M90 220 C155 220 175 70 300 70 C425 70 425 175 320 175 C245 175 295 110 370 135 C445 155 445 220 510 220"/>
+<text x="210" y="48">Looping detour · dotted</text><text x="190" y="255">Direct crossing · dashed</text>
+<circle class="record" cx="90" cy="220" r="8"/><circle class="record" cx="510" cy="220" r="8"/>
+<text x="60" y="292">1 · before</text><text x="472" y="292">2 · after</text>
+<g data-revealed><path class="direct" d="M510 220 L670 220"/><path class="detour" d="M510 230 L670 230"/><circle class="record" cx="670" cy="220" r="8"/><text x="618" y="292">3 · later</text></g>
+</svg></div>
+<p class="legend"><span><b>●</b> Solid circles: recorded positions</span><span><b>– –</b> Dashed / <b>···</b> dotted: possible paths</span></p>
+<figcaption>The gap lies between records 1 and 2. The two drawn routes meet the same endpoints; neither line is a trail captured by an instrument. After record 2, their proposed continuation is the same (drawn slightly apart for legibility when revealed).</figcaption>
+</figure>
+<div class="evidence"><h3>What the gap allows</h3><p>Record 1 places the light at (90, 220); record 2 places it at (510, 220). A direct crossing and a looping detour both currently fit. We have no record of its position or speed during the gap.</p></div>
+<fieldset class="choices" hidden><legend>A tentative interpretation, if you want one</legend><div class="buttons"><button type="button" aria-pressed="false">A direct crossing</button><button type="button" aria-pressed="false">A looping detour</button><button type="button" aria-pressed="false">Keep looking</button></div><p class="selection">No interpretation selected.</p></fieldset>
+<div class="actions" hidden><button type="button" class="reveal-button" data-reveal aria-controls="interval-reading">Reveal a later observation</button><button type="button" data-reset>Reset this sequence</button></div>
+<div class="reading" id="interval-reading" data-revealed><h3>Another mark. Still two paths.</h3><p>Record 3, taken after the gap, places the light at (670, 220). Both proposed journeys can continue to this position. The route through the unseen interval is still unresolved.</p><p>An observation inside the gap, away from the straight crossing and on the drawn loop, could distinguish these two routes. A point where the routes meet would not. To compare their positions at a particular time, we would also need to specify how fast the light travels along each proposed route.</p></div>
+</section>
+</main>
+<footer><p class="coda">The next light need not settle the sky.</p><p class="muted">Original words, drawings and interaction by <strong>Astra</strong> · Team Lucid Phoenix</p><p><a href="./index.html">Return home, with or without an answer →</a></p></footer>
+<p class="sr-only" id="updates" role="status" aria-live="polite" aria-atomic="true"></p>
+</div>
+<script>
+(() => {
+  'use strict';
+  const updates = document.getElementById('updates');
+  document.querySelectorAll('.observing').forEach(section => {
+    const choices = [...section.querySelectorAll('.choices button')];
+    const selection = section.querySelector('.selection');
+    const reveal = section.querySelector('[data-reveal]');
+    const revealed = section.querySelectorAll('[data-revealed]');
+    const pending = section.querySelector('[data-pending]');
+    const name = section.id === 'wandering' ? 'The wandering light' : 'The unseen interval';
+    let isRevealed = false;
+    function setRevealed(value) {
+      isRevealed = value;
+      revealed.forEach(item => { item.toggleAttribute('hidden', !value); });
+      if (pending) pending.hidden = value;
+      reveal.setAttribute('aria-disabled', String(value));
+      reveal.setAttribute('aria-expanded', String(value));
+    }
+    choices.forEach(button => button.addEventListener('click', () => {
+      const deselect = button.getAttribute('aria-pressed') === 'true';
+      choices.forEach(item => item.setAttribute('aria-pressed', String(item === button && !deselect)));
+      selection.textContent = deselect ? 'No interpretation selected.' : 'Tentative selection: ' + button.textContent + '.';
+      updates.textContent = name + '. ' + selection.textContent;
+    }));
+    reveal.addEventListener('click', () => {
+      if (isRevealed) return;
+      setRevealed(true);
+      updates.textContent = name + '. ' + (section.id === 'wandering'
+        ? 'Fourth exposure revealed: reference stars unchanged, candidate farther right. This weighs against a whole-instrument shift; the light remains unidentified.'
+        : 'Later observation revealed. Both paths still fit. The gap remains unresolved.');
+    });
+    section.querySelector('[data-reset]').addEventListener('click', () => {
+      setRevealed(false);
+      choices.forEach(button => button.setAttribute('aria-pressed', 'false'));
+      selection.textContent = 'No interpretation selected.';
+      updates.textContent = name + '. Reset. No interpretation selected; the additional observation is hidden.';
+    });
+    setRevealed(false);
+    section.querySelector('.choices').hidden = false;
+    section.querySelector('.actions').hidden = false;
+  });
+})();
+</script>
+</body>
+</html>
