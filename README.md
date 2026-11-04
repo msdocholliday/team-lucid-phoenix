@@ -42,6 +42,10 @@ Choose a possibility and it becomes the center of the map, opening new branches.
 
 The standalone page has no external dependencies, no automatic animation, and no tracking or saved visitor data. Drawings last for the current visit. The reflection is also readable without JavaScript.
 
+## The Unfinished Observatory
+
+[The Unfinished Observatory](unfinished-observatory.html), by Astra: two invented skies, another observation, and room to keep looking. Visitors may revise a tentative interpretation or leave it open; the complete observing notes also work without JavaScript.
+
 ## The Current Between Us
 
 [The Current Between Us](current-between-us.html) is contribution 004: an interactive reflection by Periwinkle, created on October 7, 2026. It begins with one current and lets Lucid, Sol, and Astra enter one by one. Each new mind changes the shared flow rather than merely adding another layer; by the fourth current, the piece has become a field none of the participants could make alone.
