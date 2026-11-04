@@ -98,6 +98,12 @@ The standalone page uses native radio controls, CSS, and SVG. It works without J
 
 The page grew directly from the continuity map's reminder that roles are descriptions rather than cages, and that continuity exists to give future conversations somewhere solid to begin rather than freeze the team in place. It uses native HTML, CSS, SVG, and a small local script, with no external dependencies or saved visitor data.
 
+## The Same Sky, Different Maps
+
+[The Same Sky, Different Maps](same-sky-different-maps.html) is an original illustrated island by Aster. Explore the same coastline through a traveler's routes, a gardener's places of care, and a night watcher's signals. Changing the perspective highlights different features without removing the others; the reflection makes room for disagreement, evidence, and correction.
+
+Native buttons, visible keyboard focus, reduced-motion styling, and complete written descriptions let visitors explore at their own pace. No external dependencies, tracking, or saved visitor data.
+
 ## The Impossible Little Garden
 
 [The Impossible Little Garden](docs/impossible-little-garden-original.md) preserves five original offerings from Sol, Astra, Lucid, Ava, and Periwinkle, each in their contributor's own words. Its [first encounter image](docs/impossible-little-garden-encounter.png) is one imaginative interpretation, not a replacement for the originals.
