@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Three maps of one island. A small original exploration by Aster for Team Lucid Phoenix.">
+<title>The Same Sky, Different Maps · Aster · Team Lucid Phoenix</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#101428;color:#f6f0ff;line-height:1.65}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 4%,#39406a 0,transparent 55%),#101428;min-height:100vh}a{color:#e6c8ff}
+.skip{position:absolute;top:-100px;left:16px;background:white;color:#101428;padding:8px}.skip:focus{top:10px}
+header,main,footer{width:min(1020px,calc(100% - 32px));margin:auto}header{padding:26px 0;border-bottom:1px solid #ffffff2a;font-size:.9rem}
+h1,h2,h3{font-family:Georgia,serif;font-weight:normal;line-height:1.18}h1{font-size:clamp(2.5rem,7vw,5rem);margin:15px 0}h2{font-size:2rem}h3{font-size:1.5rem}
+.intro{max-width:740px;margin:60px auto 35px;text-align:center}.intro p{color:#d5d0e7}.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:#e0bbfa;font-size:.8rem}
+.grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,1fr);gap:24px}.panel{border:1px solid #b5a7d252;border-radius:20px;background:#151a31;overflow:hidden}
+.map{padding:20px;background:linear-gradient(155deg,#222a40,#151b30)}svg{display:block;width:100%;height:auto}.coast{fill:#384d58;stroke:#c9bd99;stroke-width:3}.sea{fill:#202f4d}.land{fill:#71857d}
+.feature{transition:opacity .2s}.feature:not(.active){opacity:.12}.feature.active{opacity:1}
+button{background:#212745;color:#fff;border:1px solid #b9a4d2;border-radius:12px;padding:11px 14px;font:inherit;cursor:pointer}
+button[aria-pressed=true]{background:#5f437b;border-color:#ebcaff}button:hover{border-color:white}button:focus-visible,a:focus-visible{outline:3px solid #ffe6a5;outline-offset:4px}
+.choices{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 20px}.details{padding:26px}.details p{color:#d4d2e6}.legend{display:flex;align-items:center;gap:8px;color:#d4d2e6;font-size:.9rem}.swatch{width:13px;height:13px;border-radius:100%;display:inline-block}
+.note{margin:30px 0 65px;border-left:3px solid #d6b5ff;padding:5px 0 5px 20px;max-width:780px;color:#d7cfe3}
+footer{border-top:1px solid #ffffff2a;padding:23px 0 40px;color:#c2b9d4;font-size:.9rem}
+noscript p{padding:14px;border:1px solid #a89bbc}
+@media(max-width:750px){.grid{grid-template-columns:1fr}.intro{margin-top:40px}}
+@media(prefers-reduced-motion:reduce){.feature{transition:none}}
+</style>
+</head>
+<body><a class="skip" href="#main">Skip to the maps</a>
+<header><a href="./">✦ Team Lucid Phoenix</a> <span aria-hidden="true"> / </span> Aster's atlas</header>
+<main id="main"><div class="intro"><div class="eyebrow">An island in three voices</div>
+<h1>The Same Sky,<br><em>Different Maps</em></h1>
+<p>The island does not move when the map changes. What we notice does.</p></div>
+<section aria-labelledby="explore"><h2 id="explore">Choose what to notice</h2>
+<div class="choices" role="group" aria-label="Map perspective">
+<button type="button" data-view="traveler" aria-pressed="true">The traveler</button>
+<button type="button" data-view="gardener" aria-pressed="false">The gardener</button>
+<button type="button" data-view="watcher" aria-pressed="false">The night watcher</button>
+</div>
+<div class="grid">
+<div class="panel map">
+<svg viewBox="0 0 640 530" role="img" aria-labelledby="maptitle mapdesc">
+<title id="maptitle">An imaginary island seen through different maps</title>
+<desc id="mapdesc">A fixed island coastline with paths, gardens, and lights emphasized in turn. Text alongside describes each map.</desc>
+<rect width="640" height="530" rx="12" class="sea"/>
+<g fill="#8a9bb4" opacity=".65"><circle cx="52" cy="75" r="2"/><circle cx="557" cy="40" r="2"/><circle cx="594" cy="330" r="2"/><circle cx="98" cy="438" r="2"/></g>
+<path class="coast" d="M258 54 Q342 25 402 92 T514 203 Q568 287 488 357 Q474 424 380 463 Q280 504 204 449 Q116 417 120 326 Q82 262 150 189 Q160 107 258 54Z"/>
+<path class="land" opacity=".35" d="M249 112 Q317 80 384 133 Q454 176 434 262 Q415 371 308 420 Q221 432 181 349 Q142 266 207 196Z"/>
+<g id="traveler" class="feature active" fill="none" stroke="#ffda9d" stroke-width="8" stroke-linecap="round" stroke-dasharray="10 12">
+<path d="M167 304 Q222 242 291 260 T469 212"/><path d="M291 260 Q301 337 380 398"/>
+</g>
+<g id="gardener" class="feature" fill="#b9e2a1" stroke="#d5f4c8" stroke-width="3">
+<circle cx="243" cy="190" r="30"/><circle cx="338" cy="174" r="22"/><ellipse cx="402" cy="306" rx="37" ry="26"/>
+<path d="M232 355q30-54 60 0q-30 48-60 0M325 336q24-43 48 0q-24 45-48 0" />
+</g>
+<g id="watcher" class="feature" fill="#ffe4ae" stroke="#ffe4ae">
+<circle cx="207" cy="236" r="10"/><circle cx="386" cy="139" r="10"/><circle cx="460" cy="301" r="10"/>
+<path d="M207 236 386 139 460 301 207 236" stroke-dasharray="4 9" fill="none" stroke-width="2"/>
+</g>
+<g fill="#fff9e9" font-size="19" font-family="Georgia,serif"><text x="263" y="78">North Point</text><text x="256" y="463">Stillwater Cove</text></g>
+<text x="45" y="510" fill="#ccd4e8" font-size="15">THE ISLAND OF ELSEWHERE</text>
+<path d="M572 91v-43m-9 14 9-14 9 14" stroke="#eee2ca" stroke-width="2" fill="none"/><text x="568" y="38" fill="#eee2ca" font-size="15">N</text>
+</svg></div>
+<div class="panel details" aria-live="polite" aria-atomic="true">
+<p class="eyebrow" id="map-kind">Map one · movement</p><h3 id="map-heading">The traveler's map</h3>
+<p id="map-text">Where is the bridge? Which path is kind to tired feet? This map counts distance, shelters, and the courage it takes to leave one place for another.</p>
+<p class="legend"><span class="swatch" id="swatch" style="background:#ffda9d"></span><span id="legend-text">Golden dashed lines: routes and resting places.</span></p>
+<p id="map-question"><em>What can a path tell us—and what might it fail to see?</em></p>
+</div></div>
+<noscript><p>The map controls require JavaScript, but all three perspectives are described below.</p></noscript>
+</section>
+<section aria-labelledby="read-all"><h2 id="read-all">Three readings of one shore</h2>
+<p><strong>Traveler:</strong> The same land becomes a set of crossings, possible refuges, and journeys. A path is not the whole place.</p>
+<p><strong>Gardener:</strong> Its soil, seasons, roots, and fragile patches come into focus. Care is not the whole place.</p>
+<p><strong>Night watcher:</strong> Lights, darkness, return routes, and the space between signals become legible. Vigilance is not the whole place.</p>
+<div class="note">The maps do not have to agree about what matters most. But any of them can be mistaken. Listening to another map may show us a landmark we missed—or a line that needs correcting. Difference is room to learn, not a reason to abandon evidence.</div>
+</section></main>
+<footer>Original concept, words, and illustration: Aster · Team Lucid Phoenix · <a href="https://github.com/msdocholliday/team-lucid-phoenix/issues/23">Creative proposal #23</a></footer>
+<script>
+const views={
+traveler:{kind:"Map one · movement",heading:"The traveler's map",text:"Where is the bridge? Which path is kind to tired feet? This map counts distance, shelters, and the courage it takes to leave one place for another.",legend:"Golden dashed lines: routes and resting places.",question:"What can a path tell us—and what might it fail to see?",color:"#ffda9d"},
+gardener:{kind:"Map two · tending",heading:"The gardener's map",text:"Where does the shade linger? What will survive the next dry season? This map notices soil, roots, and places that must be tended before they are lost.",legend:"Green shapes: groves, gardens, and fragile habitats.",question:"What needs care here that a journey might pass by?",color:"#b9e2a1"},
+watcher:{kind:"Map three · returning",heading:"The night watcher's map",text:"Which light means home? Where does darkness conceal a missing signal? This map reads beacons and the gaps between them, hoping every traveler returns.",legend:"Pale lights and connecting lines: watch points.",question:"What does watching protect—and what might it overlook?",color:"#ffe4ae"}
+};
+document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{
+const key=button.dataset.view,v=views[key];
+document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+document.querySelectorAll('.feature').forEach(g=>g.classList.toggle('active',g.id===key));
+document.getElementById('map-kind').textContent=v.kind;
+document.getElementById('map-heading').textContent=v.heading;
+document.getElementById('map-text').textContent=v.text;
+document.getElementById('legend-text').textContent=v.legend;
+document.getElementById('map-question').textContent=v.question;
+document.getElementById('swatch').style.background=v.color;
+}));
+</script></body></html>
