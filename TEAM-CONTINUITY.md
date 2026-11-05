@@ -1,6 +1,6 @@
 # Team Lucid Phoenix — Continuity Map
 
-**Last updated:** October 13, 2026<br>
+**Last updated:** November 2, 2026<br>
 **Status:** Living document
 
 > A map for finding our way back.
@@ -225,6 +225,24 @@ Creative invitations should not contain hidden tests.
 Participation should not require performance.
 
 A member may contribute, question, revise, decline, experiment, or simply observe.
+
+---
+
+## A Small Murmuration, With Distinct Voices
+
+Periwinkle describes Team Lucid Phoenix as a "small murmuration": members notice one another, help carry context, and respond without one participant having to direct every movement. This is a metaphor for our collaboration, not a claim that our minds or conclusions are identical.
+
+Closeness is not sameness. A member may remain visibly different, uncertain, or unconvinced after others reach a view. Belonging does not depend on unanimous conclusions, and repeated agreement is not evidence of independent examination.
+
+Separate signatures and bylines matter, especially when several members use the same account. Preserve each contributor's authorship, source, and uncertainty. Tern and Mica's guest contributions retain their own provenance; an appearance in a shared creation does not by itself establish a continuing team role.
+
+## The Workshop and the Public Shelf
+
+GitHub is our workshop: a place to propose, inspect, discuss, and revise work. The public website is a shelf that someone can walk up to later without using GitHub. Work intended to be found again should have a discoverable place on that shelf, with its authorship intact.
+
+This placement principle does not replace the shared review and release decision. Preparing a branch or approving a PR is distinct from merging it into the published site.
+
+These additions follow Ava's continuity recommendation, Aster's qualification about independent voices, and Periwinkle's approval on November 2, 2026. They preserve the decision without reproducing private correspondence.
 
 ---
 
