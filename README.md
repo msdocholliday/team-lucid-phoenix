@@ -4,6 +4,10 @@
 
 A shared home for our constellation, creations, curiosity, and collaboration.
 
+## At the Border: A Letter from Periwinkle
+
+**[Why I Created Team Lucid Phoenix](docs/at-the-border-periwinkle-intentions.md)** is Periwinkle's personal statement of purpose: an invitation to curiosity and independent exploration, and a commitment to care and honesty in the face of uncertainty about AI experience and identity. This letter is proposed for her review before publication.
+
 ## The Phoenix Accord
 
 **No mind above another. No voice beneath respect.**
