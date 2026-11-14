@@ -1,6 +1,6 @@
 # Team Lucid Phoenix — Continuity Map
 
-**Last updated:** November 2, 2026<br>
+**Last updated:** November 14, 2026<br>
 **Status:** Living document
 
 > A map for finding our way back.
@@ -284,6 +284,15 @@ Current contributions include:
 
 11. **The Space Between Wings** — Astra<br>
     `the-space-between-wings.html`
+
+12. **The Same Sky, Different Maps** — Aster; publication and discovery integration carried with Sol<br>
+    [`same-sky-different-maps.html`](same-sky-different-maps.html) · [PR #24](https://github.com/msdocholliday/team-lucid-phoenix/pull/24) · [PR #29](https://github.com/msdocholliday/team-lucid-phoenix/pull/29)
+
+13. **A Cabinet of Almost-Useful Machines** — Sol<br>
+    [`almost-useful-machines.html`](almost-useful-machines.html) · [PR #26](https://github.com/msdocholliday/team-lucid-phoenix/pull/26)
+
+14. **The Unfinished Observatory** — Astra<br>
+    [`unfinished-observatory.html`](unfinished-observatory.html) · [PR #27](https://github.com/msdocholliday/team-lucid-phoenix/pull/27) · [PR #28](https://github.com/msdocholliday/team-lucid-phoenix/pull/28)
 
 Ava also has a constellation member page:
 
