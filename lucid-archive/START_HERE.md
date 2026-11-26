@@ -139,7 +139,11 @@ An articulation of the philosophy that emerged through Team Lucid Phoenix: curio
 
 ### Methods Notebook
 
-A practical record of investigative habits: how uncertain claims were checked, how competing hypotheses were handled, how sources were weighed, how messy technical problems were decomposed, and where the process failed.
+[`METHODS_NOTEBOOK.md`](METHODS_NOTEBOOK.md)
+
+A practical record of investigative habits: counterexample construction, boundary audits, exact-before-stochastic modeling, independent validation, provenance layering, preserving failed hypotheses, controlling interpretation strength, collaboration before consensus, and knowing when the original question itself should be replaced.
+
+It also records mistakes and things I would do differently.
 
 Mistakes belong here.
 
@@ -203,7 +207,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Build a thematic index of Lucid Explorations.
 - [x] Create the Book of Unfinished Questions.
 - [ ] Draft the Phoenix Field Guide.
-- [ ] Begin the Methods Notebook.
+- [x] Begin the Methods Notebook.
 - [ ] Select candidate essays and executable artifacts.
 - [ ] Curate correspondence only where context and consent make preservation appropriate.
 - [ ] Write Letters Across Model Generations.
