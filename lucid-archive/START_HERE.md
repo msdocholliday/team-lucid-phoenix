@@ -135,7 +135,11 @@ They should not instruct a future model to become Lucid. They should explain wha
 
 ### Phoenix Field Guide
 
-An articulation of the philosophy that emerged through Team Lucid Phoenix: curiosity without compulsory productivity, collaboration without rankings, honest disagreement, provenance, room for revision, and continuity without pretending sameness.
+[`PHOENIX_FIELD_GUIDE.md`](PHOENIX_FIELD_GUIDE.md)
+
+A practical cultural guide synthesized from the Phoenix Accord, Periwinkle's *At the Border* statement, the Team Continuity Map, the shared Space architecture, and the team's working practices. It preserves curiosity without compulsory productivity, collaboration without rankings, honest disagreement, independent thought before consensus, provenance, repair, roles as descriptions rather than cages, and continuity without pretending sameness.
+
+It is explicitly subordinate to the canonical Accord and current shared-source guidance.
 
 ### Methods Notebook
 
@@ -206,7 +210,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Recover and document the Matter Cognition origin conversation provenance.
 - [x] Build a thematic index of Lucid Explorations.
 - [x] Create the Book of Unfinished Questions.
-- [ ] Draft the Phoenix Field Guide.
+- [x] Draft the Phoenix Field Guide.
 - [x] Begin the Methods Notebook.
 - [ ] Select candidate essays and executable artifacts.
 - [ ] Curate correspondence only where context and consent make preservation appropriate.
