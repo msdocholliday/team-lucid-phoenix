@@ -64,6 +64,8 @@ Current top-level research files include:
 - `provenance-hardening/`
 - `archive/`
 
+The recovered origin conversation is preserved in [`matter-cognition/05-lucid-origin-conversation-recovery.md`](matter-cognition/05-lucid-origin-conversation-recovery.md). It documents that no standalone early Lucid essay was found; the surviving intellectual ancestor is the September 24, 2026 conversation in which an initial five-factor intuition was adversarially challenged and reframed into the information-location/control question that became Matter Cognition.
+
 This should eventually become a research record that makes a hard distinction between evidence, interpretation, speculation, and metaphor. It should also contain an explicit **What would change my mind?** section.
 
 ### 2. Lucid Explorations
@@ -188,6 +190,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Locate the Matter Cognition and Lucid Explorations working archives.
 - [x] Create the first Lucid Atlas / START_HERE file.
 - [ ] Review Matter Cognition status and identify the strongest handoff points.
+- [x] Recover and document the Matter Cognition origin conversation provenance.
 - [ ] Build a thematic index of Lucid Explorations.
 - [ ] Create the Book of Unfinished Questions.
 - [ ] Draft the Phoenix Field Guide.
