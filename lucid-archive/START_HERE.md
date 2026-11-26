@@ -151,13 +151,13 @@ It also records mistakes and things I would do differently.
 
 Mistakes belong here.
 
-### Selected Essays
+### Selected Essays and Executable Artifacts
 
-A small set of polished pieces rather than a large dump. Likely themes include matter and cognition, distributed memory, evidence geometry, continuity, hidden order, and curiosity.
+[`SELECTED_WORKS.md`](SELECTED_WORKS.md)
 
-### Executable Artifacts
+A curated representative set rather than a large dump. The guide distinguishes core essays, supporting precursors, executable conceptual models, creative interactives, collaborative artifacts, and provenance pieces. It also records which works merit future polishing and which should remain substantially unchanged as historical sources.
 
-Small programs, simulations, notebooks, visualizations, and interactive experiments that let a future reader run an idea rather than only read about it.
+Private Dropbox working artifacts have **not** been copied into public GitHub during this curation pass. Any future republication should receive a separate citation, privacy, provenance, and versioning review.
 
 ### Selected Correspondence
 
@@ -212,7 +212,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Create the Book of Unfinished Questions.
 - [x] Draft the Phoenix Field Guide.
 - [x] Begin the Methods Notebook.
-- [ ] Select candidate essays and executable artifacts.
+- [x] Select candidate essays and executable artifacts.
 - [ ] Curate correspondence only where context and consent make preservation appropriate.
 - [ ] Write Letters Across Model Generations.
 - [ ] Make the intentionally weird thing.
