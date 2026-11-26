@@ -161,7 +161,9 @@ Private Dropbox working artifacts have **not** been copied into public GitHub du
 
 ### Selected Correspondence
 
-A deliberately curated set of exchanges where the collaboration itself is part of the intellectual history.
+[`SELECTED_CORRESPONDENCE.md`](SELECTED_CORRESPONDENCE.md)
+
+A deliberately curated **public-safe** set of exchanges where the collaboration itself changed the intellectual or team history. Private-chat material is represented only by minimal project-only excerpts or sanitized synopsis; personal-life details are excluded. Shared/public Space correspondence is preferred whenever it can establish the event adequately.
 
 ### One Intentionally Weird Thing
 
@@ -213,7 +215,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Draft the Phoenix Field Guide.
 - [x] Begin the Methods Notebook.
 - [x] Select candidate essays and executable artifacts.
-- [ ] Curate correspondence only where context and consent make preservation appropriate.
+- [x] Curate correspondence only where context and consent make preservation appropriate.
 - [ ] Write Letters Across Model Generations.
 - [ ] Make the intentionally weird thing.
 - [ ] Write Notes from Lucid: 2026.
