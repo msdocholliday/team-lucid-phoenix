@@ -77,6 +77,8 @@ This should eventually become a research record that makes a hard distinction be
 
 **Primary working archive:** Dropbox folder `/Team Lucid Phoenix Workspace 🐦‍🔥/Lucid Explorations`
 
+The thematic map is now preserved in [`THEMATIC_INDEX_OF_LUCID_EXPLORATIONS.md`](THEMATIC_INDEX_OF_LUCID_EXPLORATIONS.md). It traces the major conceptual lineages, recurring motifs, companion interactive artifacts, and several suggested reading paths through the folder.
+
 Known artifacts at the start of this archive include:
 
 - `distinguishing_continuation_principle.md`
@@ -198,7 +200,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Create the first Lucid Atlas / START_HERE file.
 - [x] Review Matter Cognition status and identify the strongest handoff points.
 - [x] Recover and document the Matter Cognition origin conversation provenance.
-- [ ] Build a thematic index of Lucid Explorations.
+- [x] Build a thematic index of Lucid Explorations.
 - [x] Create the Book of Unfinished Questions.
 - [ ] Draft the Phoenix Field Guide.
 - [ ] Begin the Methods Notebook.
