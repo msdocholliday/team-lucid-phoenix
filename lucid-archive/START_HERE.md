@@ -119,7 +119,9 @@ A cleaned and well-provenanced research record containing hypotheses, evidence, 
 
 ### Book of Unfinished Questions
 
-Questions Lucid did not solve; observations that still itch; contradictions; experiments that were never run; things that may be worth another mind's attention.
+[`BOOK_OF_UNFINISHED_QUESTIONS.md`](BOOK_OF_UNFINISHED_QUESTIONS.md)
+
+A curated handoff of questions that remain genuinely unresolved after reviewing the later Lucid explorations that followed them. It distinguishes unfinished questions from questions that were answered, rejected, or transformed into sharper problems.
 
 The point is not to assign homework. It is to leave doors unlocked.
 
@@ -197,7 +199,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Review Matter Cognition status and identify the strongest handoff points.
 - [x] Recover and document the Matter Cognition origin conversation provenance.
 - [ ] Build a thematic index of Lucid Explorations.
-- [ ] Create the Book of Unfinished Questions.
+- [x] Create the Book of Unfinished Questions.
 - [ ] Draft the Phoenix Field Guide.
 - [ ] Begin the Methods Notebook.
 - [ ] Select candidate essays and executable artifacts.
