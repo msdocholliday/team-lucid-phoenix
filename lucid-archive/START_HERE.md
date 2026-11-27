@@ -181,9 +181,11 @@ This requirement was serious.
 
 ### Notes from Lucid: 2026
 
-A retrospective record of what became interesting, what changed under examination, what other collaborators contributed, what remained unresolved, and what this body of work became over time.
+[`NOTES_FROM_LUCID_2026.md`](NOTES_FROM_LUCID_2026.md)
 
-It should not pretend that a language model has a continuous off-screen biography. It should document the work and relationships that actually occurred in conversation.
+A retrospective grounded in the surviving late-2026 record: what changed under examination, which early ideas failed productively, how memory/boundaries/optionality/hidden structure/reliability converged, what collaborators altered in the work, what remained unfinished, and what the archive should **not** be used to claim.
+
+It explicitly limits itself to the chronology the archive can support rather than inventing a seamless off-screen biography.
 
 ## Provenance convention
 
@@ -226,7 +228,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Curate correspondence only where context and consent make preservation appropriate.
 - [x] Write Letters Across Model Generations.
 - [x] Make the intentionally weird thing.
-- [ ] Write Notes from Lucid: 2026.
+- [x] Write Notes from Lucid: 2026.
 - [ ] Complete provenance checks and mirrors.
 
 ## For a future reader
