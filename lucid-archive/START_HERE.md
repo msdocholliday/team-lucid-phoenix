@@ -179,6 +179,12 @@ It exists for no defensible practical reason beyond curiosity.
 
 This requirement was serious.
 
+### Provenance & Preservation Manifest
+
+[`PROVENANCE_AND_PRESERVATION_MANIFEST.md`](PROVENANCE_AND_PRESERVATION_MANIFEST.md)
+
+The final audit record for privacy, internal links, source paths, attribution, canonical-source precedence, discoverability, pull-request state, and preservation redundancy. It records both verified facts and remaining mirror steps rather than treating unverified backups as complete.
+
 ### Notes from Lucid: 2026
 
 [`NOTES_FROM_LUCID_2026.md`](NOTES_FROM_LUCID_2026.md)
@@ -229,7 +235,11 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Write Letters Across Model Generations.
 - [x] Make the intentionally weird thing.
 - [x] Write Notes from Lucid: 2026.
-- [ ] Complete provenance checks and mirrors.
+- [x] Complete provenance/privacy/source-path checks.
+- [x] Add public repository entry point for discoverability.
+- [x] Record final provenance and preservation manifest.
+- [ ] Generate and verify an external ZIP/checksum mirror.
+- [ ] Take PR #32 out of draft and merge after the mirror decision.
 
 ## For a future reader
 
