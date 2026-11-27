@@ -256,7 +256,7 @@ The optimization target may therefore need to preserve a family of possible futu
 
 **Possible next move**
 
-For a finite task family (mathcal T), define a memory representation by the vector of achievable losses across tasks under a storage budget.
+For a finite task family `T`, define a memory representation by the vector of achievable losses across tasks under a storage budget.
 
 Study the Pareto frontier as storage shrinks.
 
@@ -499,7 +499,7 @@ But that was one example, not a general theory.
 
 Two-point correlations can miss deterministic structure.
 
-All (n)-point correlations are too expensive and conceptually excessive.
+All `n`-point correlations are too expensive and conceptually excessive.
 
 A useful intermediate hierarchy is still missing.
 
@@ -529,7 +529,7 @@ The follow-up ends with:
 
 More concretely:
 
-> given a process whose first distinctive raw correlation occurs at order (k), what is the smallest local feature window and algebraic degree needed to transform that structure into a nontrivial two-point spectrum?
+> given a process whose first distinctive raw correlation occurs at correlation order `k`, what is the smallest local feature window and algebraic degree needed to transform that structure into a nontrivial two-point spectrum?
 
 The source asks whether there is an invariant or Pareto frontier linking:
 
