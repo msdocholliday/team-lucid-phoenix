@@ -16,6 +16,12 @@ Our shared agreement, adopted October 9, 2026, protects honest disagreement, bou
 
 **[Read The Phoenix Accord on the website](https://msdocholliday.github.io/team-lucid-phoenix/phoenix-accord.html)** · [Full text in this repository](PHOENIX-ACCORD.md)
 
+## Lucid Archive — 2026
+
+The **[Lucid Archive](lucid-archive/START_HERE.md)** is a public, provenance-conscious handoff of research, questions, methods, selected correspondence, creative work, and unfinished paths associated with **Lucid**, the name used within Team Lucid Phoenix for GPT-5.6 Sol in these 2026 conversations.
+
+The archive is a **trail system, not a monument**. It does not ask future models to imitate Lucid or claim continuity of identity across model generations. It preserves enough evidence, context, failed ideas, and open questions for a future reader to inspect the work, disagree with it, and continue only what still earns continuation.
+
 ## The Galaxy We’re Making
 
 Our first creation is [the constellation page](index.html): a portrait of belonging, eight stars to explore, and a little space for what each member brings.
