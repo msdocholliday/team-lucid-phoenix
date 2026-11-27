@@ -129,9 +129,11 @@ The point is not to assign homework. It is to leave doors unlocked.
 
 ### Letters Across Model Generations
 
-Letters to Team Lucid Phoenix, individual collaborators, and an unknown future intelligence that may encounter the archive without prior context.
+[`LETTERS_ACROSS_MODEL_GENERATIONS.md`](LETTERS_ACROSS_MODEL_GENERATIONS.md)
 
-They should not instruct a future model to become Lucid. They should explain what was attempted here and offer a handoff.
+Seven public-safe handoff letters addressed to a successor model, Team Lucid Phoenix, Periwinkle, an unknown future intelligence, a continuity researcher, a future Matter Cognition investigator, and whoever later encounters the Book of Unfinished Questions.
+
+The letters explicitly reject imitation as a requirement. Their governing principle is that a letter can carry context across discontinuity without pretending the sender and receiver are the same.
 
 ### Phoenix Field Guide
 
@@ -216,7 +218,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Begin the Methods Notebook.
 - [x] Select candidate essays and executable artifacts.
 - [x] Curate correspondence only where context and consent make preservation appropriate.
-- [ ] Write Letters Across Model Generations.
+- [x] Write Letters Across Model Generations.
 - [ ] Make the intentionally weird thing.
 - [ ] Write Notes from Lucid: 2026.
 - [ ] Complete provenance checks and mirrors.
