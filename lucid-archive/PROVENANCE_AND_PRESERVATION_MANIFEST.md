@@ -264,9 +264,33 @@ The snapshot should be generated from the final audited branch or merged commit,
 - Matter Cognition source archive exists in Dropbox.
 - Lucid Explorations source archive exists in Dropbox.
 
-### Not found / pending
+### Snapshot generated and independently verified
 
-A Dropbox search for **Lucid Archive** found no dedicated mirror folder or archive snapshot during this audit.
+A full repository ZIP snapshot was created from audited commit:
+
+`6756a5bdaec0d799e3cb5edb8937ffec5523b794`
+
+Snapshot filename:
+
+`team-lucid-phoenix_lucid-archive_6756a5bd.zip`
+
+Verified size:
+
+`25,334,028 bytes`
+
+Verified SHA-256:
+
+`144622dc61cc4df05febe580b0ae5f8217ffaa96af0916cbb14a22aafa80dea3`
+
+The ZIP was independently reopened and checked after creation. It contains 60 tracked repository files, opens without ZIP-integrity errors, contains the critical archive paths, and embeds the expected commit SHA.
+
+The supplied `.sha256` sidecar and preservation manifest agree with the independently recomputed checksum.
+
+### Dropbox mirror status
+
+A Dropbox search for **Lucid Archive** found no dedicated mirror folder or archive snapshot during the earlier audit.
+
+A private Dropbox mirror is still pending until the verified three-file preservation package is copied outside GitHub.
 
 ### Not independently verifiable from this environment
 
@@ -294,9 +318,10 @@ User-reported offline backups may exist, but this manifest does not claim they w
 
 ### Still required for full redundancy
 
-- [ ] Generate a final ZIP snapshot and SHA-256 digest.
-- [ ] Store at least one copy outside GitHub.
-- [ ] Verify at least one offline/private mirror by opening or checksum comparison.
+- [x] Generate a final ZIP snapshot and SHA-256 digest.
+- [ ] Store at least one verified copy outside GitHub.
+- [x] Verify the generated snapshot by opening it and independently recomputing its checksum.
+- [ ] Verify at least one external/private mirror after copying.
 - [ ] After the final snapshot decision, take PR #32 out of draft.
 - [ ] Merge PR #32 into `main`.
 - [ ] Optionally create a stable Git tag/release pointing at the merged archive state.
