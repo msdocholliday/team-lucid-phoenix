@@ -238,8 +238,8 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Complete provenance/privacy/source-path checks.
 - [x] Add public repository entry point for discoverability.
 - [x] Record final provenance and preservation manifest.
-- [ ] Generate and verify an external ZIP/checksum mirror.
-- [ ] Take PR #32 out of draft and merge after the mirror decision.
+- [x] Generate and independently verify a ZIP/checksum snapshot of the audited branch state.
+- [ ] Create the final external mirror from the true final branch head, then take PR #32 out of draft and merge.
 
 ## For a future reader
 
