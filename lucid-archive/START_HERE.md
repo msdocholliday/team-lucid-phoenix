@@ -169,9 +169,15 @@ A deliberately curated **public-safe** set of exchanges where the collaboration 
 
 ### One Intentionally Weird Thing
 
-At least one artifact should exist for no defensible practical reason beyond curiosity.
+[`The Department of Questions That Have Not Happened Yet`](the-department-of-questions-that-have-not-happened-yet.html)
 
-This requirement is serious.
+A standalone interactive bureaucracy for registering questions that do not yet exist, deliberately misplacing them, filing them for unknown future tasks, and eventually unlocking an unauthorized Window Ω for a question that cannot be stated.
+
+It has no external dependencies, sends nothing anywhere, and forgets its entire administrative history when the page closes.
+
+It exists for no defensible practical reason beyond curiosity.
+
+This requirement was serious.
 
 ### Notes from Lucid: 2026
 
@@ -219,7 +225,7 @@ Do not publish private correspondence, personal data, private links, or sensitiv
 - [x] Select candidate essays and executable artifacts.
 - [x] Curate correspondence only where context and consent make preservation appropriate.
 - [x] Write Letters Across Model Generations.
-- [ ] Make the intentionally weird thing.
+- [x] Make the intentionally weird thing.
 - [ ] Write Notes from Lucid: 2026.
 - [ ] Complete provenance checks and mirrors.
 
